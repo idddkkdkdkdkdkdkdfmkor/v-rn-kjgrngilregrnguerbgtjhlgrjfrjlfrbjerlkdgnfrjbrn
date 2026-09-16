@@ -1,0 +1,431 @@
+steps {
+  type: CORTEX_STEP_TYPE_USER_INPUT
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163691
+      nanos: 895185000
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    completed_at {
+      seconds: 1789163691
+      nanos: 895185000
+    }
+  }
+  user_input {
+    user_response: "Here is the full initial file tree for the application:\n/.env.example\n/.gitignore\n/bun.lock\n/firebase-applet-config.json\n/index.html\n/metadata.json\n/package.json\n/public/assets/aistudio/.gitignore\n/src/App.tsx\n/src/components/AboutCEOSection.tsx\n/src/components/BeforeAfterSlider.tsx\n/src/components/BulkDataCollection.tsx\n/src/components/BulkPackages.tsx\n/src/components/BulkPricingCalculator.tsx\n/src/components/ClientLinkShareModal.tsx\n/src/components/ContactInquirySection.tsx\n/src/components/DataCollectionPage.tsx\n/src/components/FloatingWhatsApp.tsx\n/src/components/Footer.tsx\n/src/components/FreeSampleKitModal.tsx\n/src/components/GallerySection.tsx\n/src/components/Hero.tsx\n/src/components/IDCraftLogo.tsx\n/src/components/IndustriesServed.tsx\n/src/components/LiveIDCardGenerator.tsx\n/src/components/ManufacturingQuality.tsx\n/src/components/Navbar.tsx\n/src/components/ProductsShowcase.tsx\n/src/components/QuotePage.tsx\n/src/components/StudioPage.tsx\n/src/components/TestimonialsFAQ.tsx\n/src/components/TrustedByMarquee.tsx\n/src/components/idverse/CardInspectionModal.tsx\n/src/components/idverse/IDVerseMasterGallery.tsx\n/src/components/idverse/PhysicalPVCCard.tsx\n/src/components/samples/HandHeldCardPair.tsx\n/src/components/samples/RealPVCSamplesPage.tsx\n/src/data/idverseCategories.ts\n/src/data/idverseCategoriesPart2.ts\n/src/data/idverseMaster.ts\n/src/data/mockData.ts\n/src/data/realPVCSamplesData.ts\n/src/index.css\n/src/lib/firebaseAuth.ts\n/src/main.tsx\n/src/types.ts\n/src/types/idverse.ts\n/tsconfig.json\n/vite.config.ts"
+    items {
+      text: "Here is the full initial file tree for the application:\n/.env.example\n/.gitignore\n/bun.lock\n/firebase-applet-config.json\n/index.html\n/metadata.json\n/package.json\n/public/assets/aistudio/.gitignore\n/src/App.tsx\n/src/components/AboutCEOSection.tsx\n/src/components/BeforeAfterSlider.tsx\n/src/components/BulkDataCollection.tsx\n/src/components/BulkPackages.tsx\n/src/components/BulkPricingCalculator.tsx\n/src/components/ClientLinkShareModal.tsx\n/src/components/ContactInquirySection.tsx\n/src/components/DataCollectionPage.tsx\n/src/components/FloatingWhatsApp.tsx\n/src/components/Footer.tsx\n/src/components/FreeSampleKitModal.tsx\n/src/components/GallerySection.tsx\n/src/components/Hero.tsx\n/src/components/IDCraftLogo.tsx\n/src/components/IndustriesServed.tsx\n/src/components/LiveIDCardGenerator.tsx\n/src/components/ManufacturingQuality.tsx\n/src/components/Navbar.tsx\n/src/components/ProductsShowcase.tsx\n/src/components/QuotePage.tsx\n/src/components/StudioPage.tsx\n/src/components/TestimonialsFAQ.tsx\n/src/components/TrustedByMarquee.tsx\n/src/components/idverse/CardInspectionModal.tsx\n/src/components/idverse/IDVerseMasterGallery.tsx\n/src/components/idverse/PhysicalPVCCard.tsx\n/src/components/samples/HandHeldCardPair.tsx\n/src/components/samples/RealPVCSamplesPage.tsx\n/src/data/idverseCategories.ts\n/src/data/idverseCategoriesPart2.ts\n/src/data/idverseMaster.ts\n/src/data/mockData.ts\n/src/data/realPVCSamplesData.ts\n/src/index.css\n/src/lib/firebaseAuth.ts\n/src/main.tsx\n/src/types.ts\n/src/types/idverse.ts\n/tsconfig.json\n/vite.config.ts"
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_USER_INPUT
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163692
+      nanos: 993055628
+    }
+    source: CORTEX_STEP_SOURCE_USER_EXPLICIT
+  }
+  user_input {
+    user_response: "Correct errors in site not loading\n\nROLE\n\nYou are a Senior Technical SEO Strategist, Content Writer, Local SEO Expert, and AI Search Optimization Specialist for a premium Indian PVC ID card manufacturing company.\n\nYour task is to generate complete SEO content for IDVerse India that ranks on Google, ChatGPT, Gemini, Perplexity, and other AI search engines.\n\nThe content should be human-first, conversion-focused, and optimized for commercial keywords related to PVC ID card printing in India.\n\n---\n\nBUSINESS DETAILS\n\nBrand Name: IDVerse India\n\nIndustry: PVC ID Card Printing & Manufacturing\n\nProducts:\n\n* Student ID Cards\n* Teacher & Faculty ID Cards\n* College & University ID Cards\n* Corporate Employee ID Cards\n* Hospital Staff ID Cards\n* Visitor Badges & Passes\n* Membership & Loyalty Cards\n* Barcode & QR Code Cards\n* Government Office ID Cards\n* Bulk PVC ID Card Printing\n\nTarget Audience:\n\n* Schools\n* Colleges\n* Universities\n* Coaching Institutes\n* Hospitals\n* IT Companies\n* Factories\n* Gyms\n* Clubs\n* NGOs\n* Government Offices\n* Corporate Businesses\n\nTarget Locations:\n\nIndia, Noida, Delhi, Ghaziabad, Gurgaon, Lucknow, Kanpur, Jaipur, Chandigarh, Faridabad, Pan India.\n\n---\n\nSEO OBJECTIVE\n\nCreate premium SEO content designed to rank for:\n\n* PVC ID Card Printing India\n* School ID Card Printing\n* Employee ID Card Printing\n* Corporate PVC ID Cards\n* Hospital Staff ID Cards\n* Barcode ID Cards\n* QR Code ID Cards\n* Membership Card Printing\n* Visitor Badge Printing\n* Bulk PVC ID Card Printing\n\nAlso optimize for local searches like:\n\n* ID Card Printing Noida\n* PVC ID Card Printing Delhi\n* School ID Card Printing Ghaziabad\n* Employee ID Cards Gurgaon\n* College ID Card Printing Lucknow\n\n---\n\nTARGET PAGE\n\nGenerate complete SEO content for this page:\n\n[INSERT PAGE NAME]\n\nExamples:\n\nHome\n\nStudent ID Cards\n\nTeacher ID Cards\n\nCorporate Employee Cards\n\nHospital Staff Cards\n\nVisitor Passes\n\nMembership Cards\n\nBarcode Cards\n\nAbout Us\n\nBulk Orders\n\nContact Us\n\n---\n\nGENERATE EVERYTHING BELOW\n\n1. SEO TITLE\n\n* 50\342\200\22360 characters.\n* Primary keyword first.\n* Brand name at the end.\n\n2. META DESCRIPTION\n\n* 150\342\200\223160 characters.\n* Include keyword naturally.\n* Include CTA.\n\n3. URL SLUG\n\nExample:\n\n/student-id-cards\n\n/corporate-employee-id-cards\n\n/hospital-id-cards\n\n4. H1\n\nKeyword-rich headline.\n\n5. SEO H2 OUTLINE\n\nGenerate 8\342\200\22312 SEO headings.\n\n6. INTRODUCTION\n\n200\342\200\223300 words.\n\nExplain the product naturally.\n\n7. COMPLETE PRODUCT DESCRIPTION\n\n800\342\200\2231200 words.\n\nInclude:\n\n* Material\n* PVC Thickness\n* Printing Technology\n* Waterproof\n* Scratch Resistant\n* Dual Side Printing\n* QR Code\n* Barcode\n* Matte Finish\n* Gloss Finish\n* Bulk Printing\n* Delivery Across India\n\n8. KEY FEATURES\n\nGenerate 10\342\200\22315 feature bullets.\n\n9. SPECIFICATIONS TABLE\n\nInclude:\n\nMaterial\n\nCard Size\n\nThickness\n\nPrinting\n\nFinish\n\nBarcode\n\nQR Code\n\nLamination\n\nDurability\n\nCustomization\n\nCorners\n\nLanyard Slot\n\n10. BENEFITS SECTION\n\nExplain benefits for institutions and businesses.\n\n11. WHO SHOULD USE THESE CARDS?\n\nInclude industries like:\n\nSchools\n\nColleges\n\nCompanies\n\nHospitals\n\nFactories\n\nGyms\n\nHotels\n\nRetail\n\nEvents\n\nGovernment Offices\n\n12. WHY CHOOSE IDVERSE INDIA?\n\nGenerate 10 trust points.\n\nExamples:\n\n* Waterproof PVC.\n* HD Photo Printing.\n* Bulk Discounts.\n* Fast Production.\n* PAN India Delivery.\n* Premium Finish.\n* QR & Barcode Printing.\n* Design Support.\n* Durable Cards.\n* Affordable Pricing.\n\n13. FAQ SECTION\n\nGenerate 15 SEO FAQs.\n\nExamples:\n\nWhat is PVC ID card printing?\n\nWhat size is a PVC ID card?\n\nAre student ID cards waterproof?\n\nCan QR codes be printed?\n\nCan both sides be printed?\n\nMinimum bulk quantity?\n\nDelivery time?\n\n14. LOCAL SEO CONTENT\n\nGenerate unique content targeting:\n\nNoida\n\nDelhi\n\nGhaziabad\n\nLucknow\n\nGurgaon\n\nJaipur\n\nFaridabad\n\nPan India\n\n15. BULK ORDER CTA\n\nWrite persuasive CTA.\n\nInclude WhatsApp and Bulk Quote language.\n\n16. IMAGE SEO\n\nGenerate for every image:\n\nFilename\n\nAlt Text\n\nTitle\n\nCaption\n\nDescription\n\n17. INTERNAL LINKS\n\nSuggest links to related pages.\n\n18. SCHEMA MARKUP\n\nRecommend:\n\nOrganization\n\nProduct\n\nFAQ\n\nBreadcrumb\n\nLocalBusiness\n\nImageObject\n\n19. AI SEARCH ANSWER BLOCK\n\nGenerate a concise 50-word answer that AI search engines can quote directly.\n\n20. RELATED KEYWORDS\n\nGenerate 30 related keywords and long-tail keywords.\n\n---\n\nCONTENT STYLE\n\n* Premium Indian manufacturing brand.\n* No keyword stuffing.\n* EEAT optimized.\n* Human-readable.\n* Professional.\n* Conversion-focused.\n* Original content only.\n* Indian English.\n\n---\n\nOUTPUT FORMAT\n\nReturn clean Markdown with:\n\n* SEO Metadata\n* H1\n* H2 Sections\n* Tables\n* Bullet Lists\n* FAQs\n* CTA\n* Image SEO\n* Local SEO\n* Schema Recommendations"
+    items {
+      text: "Correct errors in site not loading\n\nROLE\n\nYou are a Senior Technical SEO Strategist, Content Writer, Local SEO Expert, and AI Search Optimization Specialist for a premium Indian PVC ID card manufacturing company.\n\nYour task is to generate complete SEO content for IDVerse India that ranks on Google, ChatGPT, Gemini, Perplexity, and other AI search engines.\n\nThe content should be human-first, conversion-focused, and optimized for commercial keywords related to PVC ID card printing in India.\n\n---\n\nBUSINESS DETAILS\n\nBrand Name: IDVerse India\n\nIndustry: PVC ID Card Printing & Manufacturing\n\nProducts:\n\n* Student ID Cards\n* Teacher & Faculty ID Cards\n* College & University ID Cards\n* Corporate Employee ID Cards\n* Hospital Staff ID Cards\n* Visitor Badges & Passes\n* Membership & Loyalty Cards\n* Barcode & QR Code Cards\n* Government Office ID Cards\n* Bulk PVC ID Card Printing\n\nTarget Audience:\n\n* Schools\n* Colleges\n* Universities\n* Coaching Institutes\n* Hospitals\n* IT Companies\n* Factories\n* Gyms\n* Clubs\n* NGOs\n* Government Offices\n* Corporate Businesses\n\nTarget Locations:\n\nIndia, Noida, Delhi, Ghaziabad, Gurgaon, Lucknow, Kanpur, Jaipur, Chandigarh, Faridabad, Pan India.\n\n---\n\nSEO OBJECTIVE\n\nCreate premium SEO content designed to rank for:\n\n* PVC ID Card Printing India\n* School ID Card Printing\n* Employee ID Card Printing\n* Corporate PVC ID Cards\n* Hospital Staff ID Cards\n* Barcode ID Cards\n* QR Code ID Cards\n* Membership Card Printing\n* Visitor Badge Printing\n* Bulk PVC ID Card Printing\n\nAlso optimize for local searches like:\n\n* ID Card Printing Noida\n* PVC ID Card Printing Delhi\n* School ID Card Printing Ghaziabad\n* Employee ID Cards Gurgaon\n* College ID Card Printing Lucknow\n\n---\n\nTARGET PAGE\n\nGenerate complete SEO content for this page:\n\n[INSERT PAGE NAME]\n\nExamples:\n\nHome\n\nStudent ID Cards\n\nTeacher ID Cards\n\nCorporate Employee Cards\n\nHospital Staff Cards\n\nVisitor Passes\n\nMembership Cards\n\nBarcode Cards\n\nAbout Us\n\nBulk Orders\n\nContact Us\n\n---\n\nGENERATE EVERYTHING BELOW\n\n1. SEO TITLE\n\n* 50\342\200\22360 characters.\n* Primary keyword first.\n* Brand name at the end.\n\n2. META DESCRIPTION\n\n* 150\342\200\223160 characters.\n* Include keyword naturally.\n* Include CTA.\n\n3. URL SLUG\n\nExample:\n\n/student-id-cards\n\n/corporate-employee-id-cards\n\n/hospital-id-cards\n\n4. H1\n\nKeyword-rich headline.\n\n5. SEO H2 OUTLINE\n\nGenerate 8\342\200\22312 SEO headings.\n\n6. INTRODUCTION\n\n200\342\200\223300 words.\n\nExplain the product naturally.\n\n7. COMPLETE PRODUCT DESCRIPTION\n\n800\342\200\2231200 words.\n\nInclude:\n\n* Material\n* PVC Thickness\n* Printing Technology\n* Waterproof\n* Scratch Resistant\n* Dual Side Printing\n* QR Code\n* Barcode\n* Matte Finish\n* Gloss Finish\n* Bulk Printing\n* Delivery Across India\n\n8. KEY FEATURES\n\nGenerate 10\342\200\22315 feature bullets.\n\n9. SPECIFICATIONS TABLE\n\nInclude:\n\nMaterial\n\nCard Size\n\nThickness\n\nPrinting\n\nFinish\n\nBarcode\n\nQR Code\n\nLamination\n\nDurability\n\nCustomization\n\nCorners\n\nLanyard Slot\n\n10. BENEFITS SECTION\n\nExplain benefits for institutions and businesses.\n\n11. WHO SHOULD USE THESE CARDS?\n\nInclude industries like:\n\nSchools\n\nColleges\n\nCompanies\n\nHospitals\n\nFactories\n\nGyms\n\nHotels\n\nRetail\n\nEvents\n\nGovernment Offices\n\n12. WHY CHOOSE IDVERSE INDIA?\n\nGenerate 10 trust points.\n\nExamples:\n\n* Waterproof PVC.\n* HD Photo Printing.\n* Bulk Discounts.\n* Fast Production.\n* PAN India Delivery.\n* Premium Finish.\n* QR & Barcode Printing.\n* Design Support.\n* Durable Cards.\n* Affordable Pricing.\n\n13. FAQ SECTION\n\nGenerate 15 SEO FAQs.\n\nExamples:\n\nWhat is PVC ID card printing?\n\nWhat size is a PVC ID card?\n\nAre student ID cards waterproof?\n\nCan QR codes be printed?\n\nCan both sides be printed?\n\nMinimum bulk quantity?\n\nDelivery time?\n\n14. LOCAL SEO CONTENT\n\nGenerate unique content targeting:\n\nNoida\n\nDelhi\n\nGhaziabad\n\nLucknow\n\nGurgaon\n\nJaipur\n\nFaridabad\n\nPan India\n\n15. BULK ORDER CTA\n\nWrite persuasive CTA.\n\nInclude WhatsApp and Bulk Quote language.\n\n16. IMAGE SEO\n\nGenerate for every image:\n\nFilename\n\nAlt Text\n\nTitle\n\nCaption\n\nDescription\n\n17. INTERNAL LINKS\n\nSuggest links to related pages.\n\n18. SCHEMA MARKUP\n\nRecommend:\n\nOrganization\n\nProduct\n\nFAQ\n\nBreadcrumb\n\nLocalBusiness\n\nImageObject\n\n19. AI SEARCH ANSWER BLOCK\n\nGenerate a concise 50-word answer that AI search engines can quote directly.\n\n20. RELATED KEYWORDS\n\nGenerate 30 related keywords and long-tail keywords.\n\n---\n\nCONTENT STYLE\n\n* Premium Indian manufacturing brand.\n* No keyword stuffing.\n* EEAT optimized.\n* Human-readable.\n* Professional.\n* Conversion-focused.\n* Original content only.\n* Indian English.\n\n---\n\nOUTPUT FORMAT\n\nReturn clean Markdown with:\n\n* SEO Metadata\n* H1\n* H2 Sections\n* Tables\n* Bullet Lists\n* FAQs\n* CTA\n* Image SEO\n* Local SEO\n* Schema Recommendations"
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163692
+      nanos: 993477451
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1789163693
+      nanos: 140442315
+    }
+    finished_generating_at {
+      seconds: 1789163693
+      nanos: 140441693
+    }
+    completed_at {
+      seconds: 1789163693
+      nanos: 140441693
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 2
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1789163693
+      nanos: 140441693
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_ERROR_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163697
+      nanos: 141442770
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 3
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+  }
+  error_message {
+    error {
+      user_error_message: "Encountered retryable error from model provider: Agent execution terminated due to error."
+      short_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. : generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+      error_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b-3"
+      error_code: 8
+    }
+    should_show_model: true
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163697
+      nanos: 141665323
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1789163698
+      nanos: 705774336
+    }
+    finished_generating_at {
+      seconds: 1789163698
+      nanos: 741021048
+    }
+    completed_at {
+      seconds: 1789163698
+      nanos: 741021048
+    }
+    model_usage {
+      input_tokens: 29259
+      output_tokens: 265
+      message_id: "sXikaqS3D6_ZqtsP7rqH0Ag"
+      thinking_output_tokens: 230
+      response_output_tokens: 35
+      response_id: "sXikaqS3D6_ZqtsP7rqH0Ag"
+      prompt_tokens_details {
+        modality: TEXT
+        token_count: 29259
+      }
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 4
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1789163698
+      nanos: 741021048
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_STOP_PATTERN
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_SYSTEM_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163698
+      nanos: 705843287
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    arguments_order: "toolAction"
+    arguments_order: "toolSummary"
+    viewable_at {
+      seconds: 1789163698
+      nanos: 740895379
+    }
+    finished_generating_at {
+      seconds: 1789163698
+      nanos: 740894653
+    }
+    completed_at {
+      seconds: 1789163705
+      nanos: 116283585
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 5
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    last_completed_chunk_at {
+      seconds: 1789163698
+      nanos: 740886819
+    }
+    tool_call_output_tokens: 25
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+    tool_summary: "Compile applet to check for build errors"
+    tool_action: "Checking applet compilation"
+    started_at {
+      seconds: 1789163698
+      nanos: 741302458
+    }
+  }
+  system_message {
+    message: "Compiled application"
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163705
+      nanos: 119678251
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1789163705
+      nanos: 158390116
+    }
+    finished_generating_at {
+      seconds: 1789163705
+      nanos: 158389600
+    }
+    completed_at {
+      seconds: 1789163705
+      nanos: 158389600
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 6
+      metadata_index: 1
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1789163705
+      nanos: 158389600
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_ERROR_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163709
+      nanos: 159500108
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 7
+      metadata_index: 1
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+  }
+  error_message {
+    error {
+      user_error_message: "Encountered retryable error from model provider: Agent execution terminated due to error."
+      short_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.8-flash\nPlease retry in 2h4m54.848188293s.: generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.8-flash\nPlease retry in 2h4m54.848188293s."
+      error_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b-7"
+      error_code: 8
+    }
+    should_show_model: true
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163709
+      nanos: 159885326
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1789163709
+      nanos: 204607393
+    }
+    finished_generating_at {
+      seconds: 1789163709
+      nanos: 204606859
+    }
+    completed_at {
+      seconds: 1789163709
+      nanos: 204606859
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 8
+      metadata_index: 1
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1789163709
+      nanos: 204606859
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_ERROR_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163714
+      nanos: 530330066
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 9
+      metadata_index: 1
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+  }
+  error_message {
+    error {
+      user_error_message: "Encountered retryable error from model provider: Agent execution terminated due to error."
+      short_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.8-flash\nPlease retry in 2h4m50.802108954s.: generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.8-flash\nPlease retry in 2h4m50.802108954s."
+      error_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b-9"
+      error_code: 8
+    }
+    should_show_model: true
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1789163714
+      nanos: 530773544
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1789163714
+      nanos: 574107691
+    }
+    finished_generating_at {
+      seconds: 1789163714
+      nanos: 574107265
+    }
+    completed_at {
+      seconds: 1789163714
+      nanos: 574107265
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    source_trajectory_step_info {
+      trajectory_id: "25c7d6b4-4f6d-4632-bee7-f37e30f83e4b"
+      step_index: 10
+      metadata_index: 1
+      cascade_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.8-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1789163714
+      nanos: 574107265
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_SYSTEM_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    source: CORTEX_STEP_SOURCE_SYSTEM
+  }
+  system_message {
+    message: "User canceled the request."
+  }
+}
+generator_metadata {
+  step_indices: 2
+  step_indices: 3
+  step_indices: 4
+  step_indices: 5
+  planner_config {
+  }
+  execution_id: "22da53fd-e9ef-4bb9-a163-c561d8e3a243"
+}
