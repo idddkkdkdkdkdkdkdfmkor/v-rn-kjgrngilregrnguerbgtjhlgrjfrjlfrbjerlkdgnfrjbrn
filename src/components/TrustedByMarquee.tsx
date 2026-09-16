@@ -21,7 +21,7 @@ export const TrustedByMarquee: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
           <p className="text-[12px] font-bold uppercase tracking-[0.08em] text-[#2563EB]">
-            TRUSTED BY 1,450+ INSTITUTIONS ACROSS INDIA
+            TRUSTED BY 200+ SCHOOLS & 50+ MID-SIZE COMPANIES ACROSS NOIDA, DELHI, GURGAON, LUCKNOW & RAJASTHAN
           </p>
           <div className="flex items-center gap-2 text-[14px] font-medium text-[#334155]">
             <Award className="w-4 h-4 text-[#2563EB] shrink-0" />

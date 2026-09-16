@@ -20,7 +20,7 @@ export const COMPANY_INFO = {
   gstNumber: '09AAACI1234F1Z8',
   stats: {
     cardsPrinted: '5,000,000+',
-    institutions: '1,450+',
+    institutions: '250+',
     deliveryPincodes: '19,000+',
     onTimeRate: '99.8%',
     sampleDispatchTime: '24 Hours',
@@ -674,7 +674,7 @@ export const REVIEWS: ReviewItem[] = [
     role: 'Administrative Director',
     organization: 'Delhi Public School, Sector 45',
     city: 'Gurugram, NCR',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
     rating: 5,
     comment:
       'We ordered 2,800 student and faculty ID cards for the 2025-26 academic session. The color fidelity of the photographs, the sharpness of the bus route QR codes, and the custom satin lanyards exceeded our expectations. The entire batch was delivered in sorted classroom bundles 2 days ahead of schedule!',
