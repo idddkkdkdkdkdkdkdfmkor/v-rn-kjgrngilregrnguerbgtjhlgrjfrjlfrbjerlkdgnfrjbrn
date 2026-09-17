@@ -14,8 +14,8 @@ export const SchoolSolutionsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white pt-24 pb-20">
       <Helmet>
-        <title>School Identity Solutions | IDCraft India</title>
-        <meta name="description" content="Identity Solutions Built for Schools with Multiple Branches. Bulk PVC ID Cards, Multi-Branch Dashboard, and Bulk Upload Portal." />
+        <title>School ID Card Printing in Delhi NCR, Noida & Lucknow | IDCraft</title>
+        <meta name="description" content="Premium PVC School ID Card printing services for 200+ educational institutions across Delhi, Gurugram, Noida, Lucknow, and Rajasthan. Bulk manufacturing with smart RFID." />
       </Helmet>
 
       {/* Hero Section */}

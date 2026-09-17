@@ -13,8 +13,8 @@ export const CorporateSolutionsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white pt-24 pb-20">
       <Helmet>
-        <title>Corporate Identity Solutions | IDCraft India</title>
-        <meta name="description" content="Identity Solutions Built for Companies. Employee onboarding IDs, visitor badges, RFID access, and automated HR dashboards." />
+        <title>Corporate Employee ID Cards in Gurugram, Noida & Rajasthan | IDCraft</title>
+        <meta name="description" content="Enterprise B2B ID card manufacturing for 50+ mid-size companies in Noida, Delhi NCR, Lucknow, and Rajasthan. Turnstile RFID, smart badges, and premium custom lanyards." />
       </Helmet>
 
       {/* Hero Section */}

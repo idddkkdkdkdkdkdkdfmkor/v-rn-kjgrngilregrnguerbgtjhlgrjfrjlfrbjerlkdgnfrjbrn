@@ -57,7 +57,8 @@ export const IndustriesPage: React.FC = () => {
   return (
     <div className="pt-24 pb-20 bg-[#F8FAFC] min-h-screen">
       <Helmet>
-        <title>Industries We Serve | IDCraft India</title>
+        <title>Industry ID Card Manufacturer | Schools & Companies in Delhi & UP</title>
+        <meta name="description" content="India's leading ID card manufacturer for 200+ schools and 50+ mid-size companies across Delhi, Noida, Lucknow, Gurugram, and Rajasthan." />
       </Helmet>
 
       {/* Hero Section */}
