@@ -19,6 +19,8 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
   reviewText,
   rating,
   onRatingChange,
+  onShuffle,
+  isShuffling
 }) => {
   const handleCopyAndOpen = async () => {
     playTactileClick();
@@ -64,7 +66,6 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
           Leave us a <br />
           <span className="text-blue-500">G</span><span className="text-red-500">o</span><span className="text-yellow-400">o</span><span className="text-blue-500">g</span><span className="text-green-500">l</span><span className="text-red-500">e</span> Review
         </h2>
-        <p className="text-sm text-stone-500 mt-2 font-medium">Your feedback helps our small business grow ??</p>
       </div>
 
       {/* 5 Stars */}
@@ -77,7 +78,7 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
             className="focus:outline-none cursor-pointer"
           >
             <Star 
-              className={`w-10 h-10 sm:w-12 sm:h-12 transition-all duration-300 ${star <= rating ? 'fill-amber-400 text-amber-500 drop-shadow-md scale-110' : 'fill-stone-200 text-stone-300'}`} 
+              className={`w-10 h-10 sm:w-12 sm:h-12 transition-all duration-300 ${star <= rating ? 'fill-amber-400 text-amber-500 drop-shadow-sm scale-110' : 'fill-transparent text-stone-300'}`} 
             />
           </motion.button>
         ))}
@@ -85,7 +86,24 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
       <p className="text-center text-[11px] text-stone-400 mt-2">Tap to rate (5 stars)</p>
 
       {/* Review Text Box */}
-      <div className="mt-8 bg-white/70 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-stone-200 shadow-sm relative">
+      <div className="mt-8 bg-white/70 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-stone-200 shadow-sm relative group">
+        {onShuffle && (
+          <button 
+            onClick={onShuffle}
+            disabled={isShuffling}
+            className="absolute -top-3 -right-3 bg-white border border-stone-200 shadow-sm rounded-full p-2 text-stone-500 hover:text-amber-600 hover:border-amber-400 transition-all cursor-pointer disabled:opacity-50"
+            title="Shuffle for a new suggestion"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={isShuffling ? "animate-spin" : ""}>
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+              <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+              <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </button>
+        )}
         <p className="text-stone-700 text-sm sm:text-base leading-relaxed pr-2">
           {reviewText}
           <span className="inline-block w-[2px] h-4 bg-amber-400 animate-pulse ml-1 align-middle"></span>
@@ -110,7 +128,7 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
         </motion.button>
         
         <p className="flex items-center gap-1.5 text-xs text-stone-500 mt-4 font-medium">
-          <span className="text-[10px]">??</span> Safe & opens directly to Google Maps
+          Safe & opens directly to Google Maps
         </p>
       </div>
 
