@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://idcraftindia.com/</loc>
+    <loc>https://idcraft.dpdns.org/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://idcraftindia.com/quote</loc>
+    <loc>https://idcraft.dpdns.org/quote</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://idcraftindia.com/samples</loc>
+    <loc>https://idcraft.dpdns.org/samples</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://idcraftindia.com/studio</loc>
+    <loc>https://idcraft.dpdns.org/studio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://idcraftindia.com/data-collection</loc>
+    <loc>https://idcraft.dpdns.org/data-collection</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
