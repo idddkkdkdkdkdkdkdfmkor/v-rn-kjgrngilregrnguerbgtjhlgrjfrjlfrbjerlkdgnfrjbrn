@@ -23,7 +23,7 @@ export const TestimonialsFAQ: React.FC = () => {
         {/* ================= TESTIMONIALS ================= */}
         <div className="mb-24">
           <div className="max-w-3xl mb-12 text-left">
-            <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-blue-600 mb-3 block">
+            <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-brand-primary mb-3 block">
               Institutional testimonials
             </span>
             <h2 className="font-semibold text-[30px] md:text-[36px] lg:text-[44px] leading-[1.15] tracking-[-0.025em] text-[#0F172A] mb-4">
@@ -53,7 +53,7 @@ export const TestimonialsFAQ: React.FC = () => {
                     "{t.comment}"
                   </p>
 
-                  <div className="mt-4 inline-block px-2.5 py-1 rounded-md bg-blue-50 text-blue-800 text-[11px] font-medium">
+                  <div className="mt-4 inline-block px-2.5 py-1 rounded-md bg-brand-mint text-blue-800 text-[11px] font-medium">
                     Order volume: {t.cardsPrinted}
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export const TestimonialsFAQ: React.FC = () => {
                   />
                   <div>
                     <h4 className="text-[13px] font-semibold text-[#0F172A]">{t.author}</h4>
-                    <p className="text-[12px] text-blue-600 font-medium">{t.role}</p>
+                    <p className="text-[12px] text-brand-primary font-medium">{t.role}</p>
                     <p className="text-[11px] text-[#64748B] font-normal">
                       {t.organization} • {t.city}
                     </p>
@@ -93,7 +93,7 @@ export const TestimonialsFAQ: React.FC = () => {
               <span className="flex items-center gap-1.5 text-emerald-700">
                 <CheckCircle2 className="w-4 h-4" /> 100% replacement warranty
               </span>
-              <span className="flex items-center gap-1.5 text-blue-700">
+              <span className="flex items-center gap-1.5 text-brand-dark">
                 <ShieldCheck className="w-4 h-4" /> Formal GST invoicing (HSN 3920)
               </span>
             </div>
@@ -103,7 +103,7 @@ export const TestimonialsFAQ: React.FC = () => {
         {/* ================= FAQ SECTION ================= */}
         <div className="max-w-3xl">
           <div className="mb-10 text-left">
-            <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-blue-600 mb-2 block">
+            <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-brand-primary mb-2 block">
               Frequently asked questions
             </span>
             <h2 className="font-semibold text-[26px] md:text-[32px] leading-[1.2] tracking-[-0.02em] text-[#0F172A] mb-3">
@@ -125,12 +125,12 @@ export const TestimonialsFAQ: React.FC = () => {
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
-                    className="w-full p-5 text-left flex items-center justify-between gap-4 font-medium text-[15px] text-[#0F172A] hover:text-blue-600 transition-colors"
+                    className="w-full p-5 text-left flex items-center justify-between gap-4 font-medium text-[15px] text-[#0F172A] hover:text-brand-primary transition-colors"
                   >
                     <span>{faq.question}</span>
                     <ChevronDown
                       className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
-                        isOpen ? 'rotate-180 text-blue-600' : ''
+                        isOpen ? 'rotate-180 text-brand-primary' : ''
                       }`}
                     />
                   </button>

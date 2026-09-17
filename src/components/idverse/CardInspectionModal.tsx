@@ -56,7 +56,7 @@ export const CardInspectionModal: React.FC<CardInspectionModalProps> = ({
             <div>
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
                 {record.organization}
-                <span className="text-xs font-normal px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                <span className="text-xs font-normal px-2 py-0.5 rounded-full bg-brand-mint0/20 text-blue-300 border border-brand-mint0/30">
                   {record.categoryLabel}
                 </span>
               </h3>
@@ -289,7 +289,7 @@ export const CardInspectionModal: React.FC<CardInspectionModalProps> = ({
                     onClose();
                     onOpenBulkOrder(record.categoryLabel);
                   }}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-xs shadow-md transition-all"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-brand-primary to-indigo-600 hover:from-brand-mint0 hover:to-indigo-500 text-white font-semibold text-xs shadow-md transition-all"
                 >
                   <span>Order Bulk PVC For This Template</span>
                   <ExternalLink className="w-3.5 h-3.5" />

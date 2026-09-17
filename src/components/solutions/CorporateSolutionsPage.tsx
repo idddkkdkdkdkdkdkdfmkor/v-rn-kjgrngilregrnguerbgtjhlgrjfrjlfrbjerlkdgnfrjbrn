@@ -25,7 +25,7 @@ export const CorporateSolutionsPage: React.FC = () => {
             <span>Enterprise & Corporate</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0F172A] leading-[1.1] tracking-tight mb-6">
-            Secure Identity Management for <span className="text-blue-600">Modern Workplaces.</span>
+            Secure Identity Management for <span className="text-brand-primary">Modern Workplaces.</span>
           </h1>
           <p className="text-lg sm:text-xl text-[#334155] leading-relaxed mb-10 max-w-2xl mx-auto">
             Streamline employee onboarding, manage visitor access, and integrate RFID/NFC smart cards with your existing attendance systems.
@@ -97,7 +97,7 @@ export const CorporateSolutionsPage: React.FC = () => {
       {/* Automated HR Dashboard */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-slate-900 rounded-[2.5rem] p-8 lg:p-16 overflow-hidden relative border border-slate-800 shadow-2xl">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-brand-mint0/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
           
           <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -113,7 +113,7 @@ export const CorporateSolutionsPage: React.FC = () => {
                   'Downloadable GST invoices and Purchase Orders'
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4">
-                    <div className="mt-1 bg-blue-500/20 p-1.5 rounded-full text-blue-400 border border-blue-500/30">
+                    <div className="mt-1 bg-brand-mint0/20 p-1.5 rounded-full text-blue-400 border border-brand-mint0/30">
                       <UserPlus className="w-4 h-4" />
                     </div>
                     <span className="text-slate-200 font-medium">{item}</span>

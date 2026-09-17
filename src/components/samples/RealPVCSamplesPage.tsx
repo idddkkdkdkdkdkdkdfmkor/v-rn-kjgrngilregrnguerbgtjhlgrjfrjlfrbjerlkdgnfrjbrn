@@ -35,21 +35,21 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
     : REAL_PVC_SAMPLES.filter((s) => s.id === selectedFilter || s.theme.includes(selectedFilter));
 
   return (
-    <div className="min-h-screen bg-slate-100 text-slate-900 pb-20 pt-[72px] selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-slate-100 text-slate-900 pb-20 pt-[72px] selection:bg-brand-primary selection:text-white">
       {/* Sticky Top Navigation Bar */}
       <div className="sticky top-[72px] z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
           <button
             onClick={onBackToHome}
-            className="inline-flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-blue-600 transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-brand-primary transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
           </button>
 
           <div className="flex items-center gap-2">
-            <span className="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-              <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+            <span className="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-brand-mint text-brand-dark border border-brand-mint">
+              <Sparkles className="w-3.5 h-3.5 text-brand-primary" />
               Printed PVC Portfolio
             </span>
             <button
@@ -66,8 +66,8 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
       {/* Main Header / Breadcrumb */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/70 text-blue-800 text-xs font-bold mb-3 border border-blue-200/80">
-            <ShieldCheck className="w-4 h-4 text-blue-700" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-mint/70 text-blue-800 text-xs font-bold mb-3 border border-brand-mint/80">
+            <ShieldCheck className="w-4 h-4 text-brand-dark" />
             OFFICIAL ID CARD MANUFACTURER SAMPLE PROOFS
           </div>
 
@@ -105,7 +105,7 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
                 onClick={() => setSelectedFilter('all')}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                   selectedFilter === 'all'
-                    ? 'bg-blue-600 text-white shadow-xs'
+                    ? 'bg-brand-primary text-white shadow-xs'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                 }`}
               >
@@ -115,7 +115,7 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
                 onClick={() => setSelectedFilter('sample-cbse-school')}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                   selectedFilter === 'sample-cbse-school'
-                    ? 'bg-blue-600 text-white shadow-xs'
+                    ? 'bg-brand-primary text-white shadow-xs'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                 }`}
               >
@@ -125,7 +125,7 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
                 onClick={() => setSelectedFilter('sample-it-company')}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                   selectedFilter === 'sample-it-company'
-                    ? 'bg-blue-600 text-white shadow-xs'
+                    ? 'bg-brand-primary text-white shadow-xs'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                 }`}
               >
@@ -135,7 +135,7 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
                 onClick={() => setSelectedFilter('sample-hospital-staff')}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                   selectedFilter === 'sample-hospital-staff'
-                    ? 'bg-blue-600 text-white shadow-xs'
+                    ? 'bg-brand-primary text-white shadow-xs'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                 }`}
               >
@@ -145,7 +145,7 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
                 onClick={() => setSelectedFilter('sample-engineering-college')}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                   selectedFilter === 'sample-engineering-college'
-                    ? 'bg-blue-600 text-white shadow-xs'
+                    ? 'bg-brand-primary text-white shadow-xs'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                 }`}
               >
@@ -155,7 +155,7 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
                 onClick={() => setSelectedFilter('sample-gym-club')}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                   selectedFilter === 'sample-gym-club'
-                    ? 'bg-blue-600 text-white shadow-xs'
+                    ? 'bg-brand-primary text-white shadow-xs'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                 }`}
               >
@@ -190,7 +190,7 @@ export const RealPVCSamplesPage: React.FC<RealPVCSamplesPageProps> = ({
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
               <button
                 onClick={() => onOpenInquiry('Solid PVC ID Cards')}
-                className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition-colors"
+                className="px-6 py-3 rounded-xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-sm shadow-md transition-colors"
               >
                 Request Instant Bulk Quote
               </button>

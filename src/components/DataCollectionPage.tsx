@@ -34,7 +34,7 @@ export const DataCollectionPage: React.FC<DataCollectionPageProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white selection:bg-blue-600 selection:text-white pt-[72px] pb-20">
+    <div className="min-h-screen bg-slate-900 text-white selection:bg-brand-primary selection:text-white pt-[72px] pb-20">
       {/* Top Utility Bar for Dedicated Client Page */}
       <div className="sticky top-[72px] z-30 bg-slate-950/95 backdrop-blur-md border-b border-slate-800 py-3.5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">

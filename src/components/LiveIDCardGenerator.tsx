@@ -202,8 +202,8 @@ export const LiveIDCardGenerator: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-mint border border-brand-mint text-brand-dark text-xs font-bold uppercase tracking-wider mb-3">
+            <Sparkles className="w-3.5 h-3.5 text-brand-primary" />
             Interactive 3D ID Studio
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -233,13 +233,13 @@ export const LiveIDCardGenerator: React.FC = () => {
                       onClick={() => handleTemplateChange(key)}
                       className={`px-3 py-2.5 rounded-xl text-xs font-bold text-left transition-all border ${
                         isActive
-                          ? 'border-blue-600 bg-blue-50/70 text-blue-700 shadow-xs'
+                          ? 'border-brand-primary bg-brand-mint/70 text-brand-dark shadow-xs'
                           : 'border-slate-200 text-slate-700 hover:bg-slate-50'
                       }`}
                     >
                       <div className="flex items-center justify-between">
                         <span>{TEMPLATES[key].name}</span>
-                        {isActive && <Check className="w-3.5 h-3.5 text-blue-600" />}
+                        {isActive && <Check className="w-3.5 h-3.5 text-brand-primary" />}
                       </div>
                     </button>
                   );
@@ -295,7 +295,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     onChange={(e) =>
                       setCardData((prev) => ({ ...prev, institutionName: e.target.value }))
                     }
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900 placeholder:text-slate-400"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900 placeholder:text-slate-400"
                   />
                 </div>
 
@@ -309,7 +309,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     onChange={(e) =>
                       setCardData((prev) => ({ ...prev, tagline: e.target.value }))
                     }
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900 placeholder:text-slate-400"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900 placeholder:text-slate-400"
                   />
                 </div>
               </div>
@@ -331,7 +331,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     onChange={(e) =>
                       setCardData((prev) => ({ ...prev, personName: e.target.value.toUpperCase() }))
                     }
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900 placeholder:text-slate-400"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900 placeholder:text-slate-400"
                   />
                 </div>
 
@@ -348,7 +348,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                         designation: e.target.value.toUpperCase(),
                       }))
                     }
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900 placeholder:text-slate-400"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900 placeholder:text-slate-400"
                   />
                 </div>
 
@@ -362,7 +362,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     onChange={(e) =>
                       setCardData((prev) => ({ ...prev, idNumber: e.target.value }))
                     }
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900 placeholder:text-slate-400"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900 placeholder:text-slate-400"
                   />
                 </div>
 
@@ -376,7 +376,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     onChange={(e) =>
                       setCardData((prev) => ({ ...prev, departmentOrClass: e.target.value }))
                     }
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900 placeholder:text-slate-400"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900 placeholder:text-slate-400"
                   />
                 </div>
 
@@ -387,7 +387,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     onChange={(e) =>
                       setCardData((prev) => ({ ...prev, bloodGroup: e.target.value }))
                     }
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900"
                   >
                     <option value="A +ve">A +ve</option>
                     <option value="A -ve">A -ve</option>
@@ -410,7 +410,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     onChange={(e) =>
                       setCardData((prev) => ({ ...prev, emergencyPhone: e.target.value }))
                     }
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900 placeholder:text-slate-400"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900 placeholder:text-slate-400"
                   />
                 </div>
               </div>
@@ -428,8 +428,8 @@ export const LiveIDCardGenerator: React.FC = () => {
                   <span className="text-xs font-semibold text-slate-700 block mb-1.5">
                     Upload Custom Photo
                   </span>
-                  <label className="flex items-center gap-2 px-3 py-2 rounded-lg border border-dashed border-slate-300 hover:border-blue-500 cursor-pointer bg-slate-50 hover:bg-blue-50/50 transition-colors text-xs font-medium text-slate-600">
-                    <Upload className="w-4 h-4 text-blue-600" />
+                  <label className="flex items-center gap-2 px-3 py-2 rounded-lg border border-dashed border-slate-300 hover:border-brand-mint0 cursor-pointer bg-slate-50 hover:bg-brand-mint/50 transition-colors text-xs font-medium text-slate-600">
+                    <Upload className="w-4 h-4 text-brand-primary" />
                     <span>Choose PNG/JPG photo</span>
                     <input
                       type="file"
@@ -452,7 +452,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                       setCardData((prev) => ({ ...prev, lanyardText: e.target.value }))
                     }
                     placeholder="e.g. DELHI PUBLIC SCHOOL"
-                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-900 placeholder:text-slate-400"
+                    className="w-full px-3 py-2 text-xs font-medium border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0 bg-white text-slate-900 placeholder:text-slate-400"
                   />
                 </div>
               </div>
@@ -464,7 +464,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     type="checkbox"
                     checked={showLanyard}
                     onChange={(e) => setShowLanyard(e.target.checked)}
-                    className="rounded text-blue-600 focus:ring-blue-500"
+                    className="rounded text-brand-primary focus:ring-brand-mint0"
                   />
                   <span>Show Branded Satin Lanyard</span>
                 </label>
@@ -476,7 +476,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     onChange={(e) =>
                       setCardData((prev) => ({ ...prev, showHoloSeal: e.target.checked }))
                     }
-                    className="rounded text-blue-600 focus:ring-blue-500"
+                    className="rounded text-brand-primary focus:ring-brand-mint0"
                   />
                   <span>Include Holographic 3D Security Stamp</span>
                 </label>
@@ -618,7 +618,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                     <div className="text-[9px] space-y-0.5">
                       <p className="font-bold text-slate-900">Valid Upto: {cardData.validUpto}</p>
                       <p className="text-slate-600">Emergency: {cardData.emergencyPhone}</p>
-                      <p className="text-[8px] text-blue-700 font-medium">Scan QR to verify authentic record</p>
+                      <p className="text-[8px] text-brand-dark font-medium">Scan QR to verify authentic record</p>
                     </div>
                   </div>
 
@@ -651,7 +651,7 @@ export const LiveIDCardGenerator: React.FC = () => {
                 onClick={() => setIsFlipped(!isFlipped)}
                 className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-50 shadow-2xs"
               >
-                <RotateCw className="w-3.5 h-3.5 text-blue-600" />
+                <RotateCw className="w-3.5 h-3.5 text-brand-primary" />
                 <span>Flip to {isFlipped ? 'Front View' : 'Back View'}</span>
               </button>
             </div>
@@ -682,9 +682,9 @@ export const LiveIDCardGenerator: React.FC = () => {
                     );
                     setTimeout(() => setSavedProofToast(null), 4000);
                   }}
-                  className="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold hover:bg-blue-100 transition-colors"
+                  className="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-brand-mint border border-brand-mint text-brand-dark text-xs font-semibold hover:bg-brand-mint transition-colors"
                 >
-                  <Download className="w-3.5 h-3.5 text-blue-600" />
+                  <Download className="w-3.5 h-3.5 text-brand-primary" />
                   <span>Save Proof</span>
                 </button>
               </div>

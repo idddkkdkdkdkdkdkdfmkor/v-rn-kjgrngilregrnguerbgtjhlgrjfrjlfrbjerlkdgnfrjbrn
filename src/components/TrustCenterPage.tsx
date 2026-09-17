@@ -37,7 +37,7 @@ export const TrustCenterPage: React.FC = () => {
         </div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10 pt-16">
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-mint0/10 border border-brand-mint0/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
             <Lock className="w-3.5 h-3.5" /> Enterprise Security
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
@@ -57,7 +57,7 @@ export const TrustCenterPage: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {securityPillars.map((pillar, i) => (
             <div key={i} className="bg-white rounded-3xl p-8 border border-slate-200 shadow-xl shadow-slate-200/50 flex flex-col items-center text-center hover:-translate-y-1 transition-transform">
-              <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-6">
+              <div className="w-16 h-16 rounded-2xl bg-brand-mint flex items-center justify-center text-brand-primary mb-6">
                 <pillar.icon className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">{pillar.title}</h3>

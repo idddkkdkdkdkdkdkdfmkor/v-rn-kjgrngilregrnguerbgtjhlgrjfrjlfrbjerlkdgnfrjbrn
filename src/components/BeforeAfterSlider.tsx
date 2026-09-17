@@ -74,7 +74,7 @@ export const BeforeAfterSlider: React.FC = () => {
                     <h4 className="text-[14px] font-bold text-[#2563EB]">Delhi Public School</h4>
                     <p className="text-[11px] text-[#64748B] font-normal">CBSE Affiliated • New Delhi</p>
                   </div>
-                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-[#2563EB]">
+                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-brand-mint text-[#2563EB]">
                     2025–26
                   </span>
                 </div>

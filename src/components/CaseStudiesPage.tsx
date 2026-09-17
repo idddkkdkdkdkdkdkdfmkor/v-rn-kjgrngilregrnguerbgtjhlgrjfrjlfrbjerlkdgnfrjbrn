@@ -54,7 +54,7 @@ export const CaseStudiesPage: React.FC = () => {
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="text-center max-w-3xl mx-auto">
-          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Customer Success</p>
+          <p className="text-sm font-bold text-brand-primary uppercase tracking-widest mb-3">Customer Success</p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-6">
             How India's Top Institutions Scale Their Identity
           </h1>
@@ -136,8 +136,8 @@ export const CaseStudiesPage: React.FC = () => {
               </div>
               
               <div className="p-8 md:p-10 flex flex-col flex-1">
-                <div className="text-sm font-bold text-blue-600 mb-3">{study.client}</div>
-                <h3 className="text-2xl font-bold text-[#0F172A] mb-4 leading-tight group-hover:text-blue-600 transition-colors">
+                <div className="text-sm font-bold text-brand-primary mb-3">{study.client}</div>
+                <h3 className="text-2xl font-bold text-[#0F172A] mb-4 leading-tight group-hover:text-brand-primary transition-colors">
                   {study.title}
                 </h3>
                 <p className="text-slate-600 mb-8 flex-1">
@@ -146,7 +146,7 @@ export const CaseStudiesPage: React.FC = () => {
                 
                 <div className="flex items-center justify-between pt-6 border-t border-slate-200">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold">
+                    <div className="w-10 h-10 rounded-full bg-brand-mint flex items-center justify-center text-brand-dark font-bold">
                       {study.logo.substring(0, 2)}
                     </div>
                     <div>
@@ -154,7 +154,7 @@ export const CaseStudiesPage: React.FC = () => {
                       <div className="text-xs font-medium text-slate-500">{study.metricLabel}</div>
                     </div>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all shadow-sm">
+                  <div className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center group-hover:bg-brand-primary group-hover:text-white group-hover:border-brand-primary transition-all shadow-sm">
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export const CaseStudiesPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-32 border-t border-slate-100 pt-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <Building2 className="w-8 h-8 text-blue-600 mx-auto mb-4" />
+            <Building2 className="w-8 h-8 text-brand-primary mx-auto mb-4" />
             <div className="text-4xl font-extrabold text-slate-900 mb-1">500+</div>
             <div className="text-sm font-medium text-slate-500">Institutions Trust Us</div>
           </div>

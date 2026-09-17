@@ -1,0 +1,122 @@
+
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* Micro subtle technical dot pattern */
+  .bg-craft-pattern {
+    background-image: radial-gradient(rgba(217, 119, 6, 0.08) 1px, transparent 1px), radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+  }
+
+  /* Authentic Stitching & Tailored Seam Utilities */
+  .stitch-card {
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px -2px rgba(28, 25, 23, 0.07), 0 0 0 1px rgba(217, 119, 6, 0.2);
+  }
+
+  /* Running stitch seam: Inset tailored dashed thread line */
+  .stitch-seam {
+    position: relative;
+  }
+  .stitch-seam::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border: 1.5px dashed rgba(217, 119, 6, 0.42);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Double needle stitch (found on premium cardholders and lanyards) */
+  .stitch-double {
+    position: relative;
+  }
+  .stitch-double::before {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border: 1px dashed rgba(217, 119, 6, 0.35);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .stitch-double::after {
+    content: '';
+    position: absolute;
+    inset: 7px;
+    border: 1px dashed rgba(217, 119, 6, 0.22);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Dark stitch seam for dark badge elements */
+  .stitch-dark-seam {
+    position: relative;
+  }
+  .stitch-dark-seam::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1.5px dashed rgba(245, 158, 11, 0.6);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Button reinforced stitch strap */
+  .stitch-btn-strap {
+    position: relative;
+  }
+  .stitch-btn-strap::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1.5px dashed rgba(28, 25, 23, 0.45);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Tactile woven ribbon / lanyard fabric texture */
+  .texture-lanyard-ribbon {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 6px,
+      rgba(217, 119, 6, 0.035) 6px,
+      rgba(217, 119, 6, 0.035) 12px
+    );
+  }
+
+  /* Subtle stitched patch tag */
+  .stitch-patch {
+    position: relative;
+    border: 1.5px dashed rgba(217, 119, 6, 0.5);
+  }
+
+  /* Gold Shimmer effect */
+  @keyframes goldShimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .gold-shimmer {
+    background: linear-gradient(90deg, #f59e0b 0%, #fef08a 50%, #f59e0b 100%);
+    background-size: 200% 100%;
+    animation: goldShimmer 3.5s infinite;
+  }
+}
+

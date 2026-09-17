@@ -71,7 +71,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12 text-left">
-          <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-blue-600 mb-3 block">
+          <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-brand-primary mb-3 block">
             Direct procurement desk
           </span>
           <h2 className="font-semibold text-[30px] md:text-[36px] lg:text-[44px] leading-[1.15] tracking-[-0.025em] text-[#0F172A] mb-4">
@@ -100,7 +100,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                         setFormData({ ...formData, institutionName: e.target.value })
                       }
                       placeholder="e.g. St. Xavier's Senior Secondary"
-                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                     />
                   </div>
 
@@ -116,7 +116,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                         setFormData({ ...formData, contactPerson: e.target.value })
                       }
                       placeholder="e.g. Dr. Anil Mehra (Principal)"
-                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                     />
                   </div>
 
@@ -130,7 +130,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="+91 98110 12345"
-                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                     />
                   </div>
 
@@ -142,7 +142,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="admin@schoolname.edu.in"
-                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                     />
                   </div>
 
@@ -154,7 +154,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                       value={formData.city}
                       onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                       placeholder="e.g. Gurugram, Haryana"
-                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                     />
                   </div>
 
@@ -163,7 +163,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                     <select
                       value={formData.cardType}
                       onChange={(e) => setFormData({ ...formData, cardType: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                     >
                       <option>Student ID Cards</option>
                       <option>Employee ID Cards</option>
@@ -180,7 +180,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                   <select
                     value={formData.quantity}
                     onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
-                    className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                   >
                     <option>50 – 100 Cards (Starter batch)</option>
                     <option>100 – 250 Cards</option>
@@ -199,7 +199,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Specify requirements such as barcode encoding, slot punching, or expedited 48-hour dispatch..."
-                    className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-[14px] text-[#0F172A] placeholder:text-slate-400 focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                   />
                 </div>
 
@@ -208,8 +208,8 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                   <label className="font-medium text-[13px] text-[#0F172A] block mb-1.5">
                     Upload roster or logo file (optional)
                   </label>
-                  <label className="flex items-center gap-2 p-3 bg-white border border-dashed border-slate-300 rounded-xl cursor-pointer hover:border-blue-500 transition-colors">
-                    <Upload className="w-4 h-4 text-blue-600" />
+                  <label className="flex items-center gap-2 p-3 bg-white border border-dashed border-slate-300 rounded-xl cursor-pointer hover:border-brand-mint0 transition-colors">
+                    <Upload className="w-4 h-4 text-brand-primary" />
                     <span className="text-[14px] text-[#334155]">
                       {attachedFileName ? attachedFileName : 'Attach institution logo, Excel roster, or existing PDF proof'}
                     </span>
@@ -226,13 +226,13 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
                 <div className="flex items-start gap-2 mt-4">
                   <input type="checkbox" required id="consent" className="mt-1" />
                   <label htmlFor="consent" className="text-[12px] text-slate-600">
-                    I agree to the <a href="/privacy-policy" target="_blank" className="text-blue-600 hover:underline">Privacy Policy</a> and <a href="/terms-conditions" target="_blank" className="text-blue-600 hover:underline">Terms & Conditions</a>. I consent to be contacted regarding my quotation.
+                    I agree to the <a href="/privacy-policy" target="_blank" className="text-brand-primary hover:underline">Privacy Policy</a> and <a href="/terms-conditions" target="_blank" className="text-brand-primary hover:underline">Terms & Conditions</a>. I consent to be contacted regarding my quotation.
                   </label>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 px-6 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-[14px] shadow-xs transition-colors flex items-center justify-center gap-2 mt-2"
+                  className="w-full py-3.5 px-6 rounded-xl bg-brand-primary hover:bg-brand-dark text-white font-medium text-[14px] shadow-xs transition-colors flex items-center justify-center gap-2 mt-2"
                 >
                   <Send className="w-4 h-4" />
                   <span>Submit quotation request and receive WhatsApp proof</span>

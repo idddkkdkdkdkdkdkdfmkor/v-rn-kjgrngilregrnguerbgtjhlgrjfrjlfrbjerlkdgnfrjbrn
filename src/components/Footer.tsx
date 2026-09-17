@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center md:text-left">
             <div className="flex flex-col items-center gap-2 justify-center">
-              <div className="w-10 h-10 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-brand-primary/20 text-blue-400 flex items-center justify-center shrink-0">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <div className="text-center">

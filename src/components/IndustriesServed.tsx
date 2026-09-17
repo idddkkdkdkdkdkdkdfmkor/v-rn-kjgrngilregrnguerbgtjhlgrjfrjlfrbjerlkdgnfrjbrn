@@ -23,7 +23,7 @@ export const IndustriesServed: React.FC<IndustriesServedProps> = ({ onSelectIndu
   const getIcon = (id: string) => {
     switch (id) {
       case 'schools':
-        return <GraduationCap className="w-6 h-6 text-blue-600" />;
+        return <GraduationCap className="w-6 h-6 text-brand-primary" />;
       case 'universities':
         return <Building2 className="w-6 h-6 text-indigo-600" />;
       case 'hospitals':
@@ -35,7 +35,7 @@ export const IndustriesServed: React.FC<IndustriesServedProps> = ({ onSelectIndu
       case 'events':
         return <Ticket className="w-6 h-6 text-purple-600" />;
       default:
-        return <Landmark className="w-6 h-6 text-blue-600" />;
+        return <Landmark className="w-6 h-6 text-brand-primary" />;
     }
   };
 
@@ -44,7 +44,7 @@ export const IndustriesServed: React.FC<IndustriesServedProps> = ({ onSelectIndu
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12 text-left">
-          <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-blue-600 mb-3 block">
+          <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-brand-primary mb-3 block">
             Specialized sectors
           </span>
           <h2 className="font-semibold text-[30px] md:text-[36px] lg:text-[44px] leading-[1.15] tracking-[-0.025em] text-[#0F172A] mb-4">
@@ -67,12 +67,12 @@ export const IndustriesServed: React.FC<IndustriesServedProps> = ({ onSelectIndu
                   <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center group-hover:scale-105 transition-transform">
                     {getIcon(ind.id)}
                   </div>
-                  <span className="text-[12px] font-medium text-blue-700 bg-blue-50 px-3 py-1 rounded-full">
+                  <span className="text-[12px] font-medium text-brand-dark bg-brand-mint px-3 py-1 rounded-full">
                     {ind.turnaroundTime}
                   </span>
                 </div>
 
-                <h3 className="card-title group-hover:text-blue-600 transition-colors">
+                <h3 className="card-title group-hover:text-brand-primary transition-colors">
                   {ind.name}
                 </h3>
                 <p className="text-[13px] font-medium text-[#64748B] mt-1">{ind.tagline}</p>
@@ -101,7 +101,7 @@ export const IndustriesServed: React.FC<IndustriesServedProps> = ({ onSelectIndu
                 </div>
                 <button
                   onClick={() => onSelectIndustry(ind.name)}
-                  className="inline-flex items-center gap-1 px-3.5 py-2 rounded-xl bg-slate-900 text-white text-[13px] font-medium hover:bg-blue-600 transition-colors group-hover:bg-blue-600"
+                  className="inline-flex items-center gap-1 px-3.5 py-2 rounded-xl bg-slate-900 text-white text-[13px] font-medium hover:bg-brand-primary transition-colors group-hover:bg-brand-primary"
                 >
                   <span>Explore sector</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />

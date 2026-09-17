@@ -19,7 +19,7 @@ export const ManufacturingQuality: React.FC = () => {
   const getStepIcon = (iconName: string) => {
     switch (iconName) {
       case 'FileCheck':
-        return <FileCheck className="w-5 h-5 text-blue-600" />;
+        return <FileCheck className="w-5 h-5 text-brand-primary" />;
       case 'Printer':
         return <Printer className="w-5 h-5 text-indigo-600" />;
       case 'Layers':
@@ -33,9 +33,9 @@ export const ManufacturingQuality: React.FC = () => {
       case 'Sparkles':
         return <Sparkles className="w-5 h-5 text-yellow-500" />;
       case 'Truck':
-        return <Truck className="w-5 h-5 text-blue-700" />;
+        return <Truck className="w-5 h-5 text-brand-dark" />;
       default:
-        return <CheckCircle2 className="w-5 h-5 text-blue-600" />;
+        return <CheckCircle2 className="w-5 h-5 text-brand-primary" />;
     }
   };
 
@@ -44,8 +44,8 @@ export const ManufacturingQuality: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-3">
-            <Award className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-mint border border-brand-mint text-brand-dark text-xs font-bold uppercase tracking-wider mb-3">
+            <Award className="w-3.5 h-3.5 text-brand-primary" />
             Zero-Defect Standards
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -67,7 +67,7 @@ export const ManufacturingQuality: React.FC = () => {
                 onClick={() => setActiveStep(index)}
                 className={`p-5 rounded-2xl border transition-all cursor-pointer select-none flex flex-col justify-between ${
                   isSelected
-                    ? 'border-blue-600 bg-blue-50/50 shadow-md ring-1 ring-blue-600'
+                    ? 'border-brand-primary bg-brand-mint/50 shadow-md ring-1 ring-brand-primary'
                     : 'border-slate-200 hover:border-slate-300 hover:bg-slate-50'
                 }`}
               >
@@ -75,7 +75,7 @@ export const ManufacturingQuality: React.FC = () => {
                   <div className="flex items-center justify-between mb-3">
                     <span
                       className={`text-xs font-extrabold px-2 py-0.5 rounded-md ${
-                        isSelected ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-600'
+                        isSelected ? 'bg-brand-primary text-white' : 'bg-slate-100 text-slate-600'
                       }`}
                     >
                       STEP {item.step}
@@ -124,7 +124,7 @@ export const ManufacturingQuality: React.FC = () => {
 
             <div className="lg:col-span-4 flex justify-center">
               <div className="w-full max-w-xs p-6 rounded-2xl bg-slate-800/80 border border-slate-700 text-center">
-                <div className="w-14 h-14 rounded-2xl bg-blue-600/20 text-blue-400 mx-auto flex items-center justify-center mb-3">
+                <div className="w-14 h-14 rounded-2xl bg-brand-primary/20 text-blue-400 mx-auto flex items-center justify-center mb-3">
                   {getStepIcon(MANUFACTURING_STEPS[activeStep].icon)}
                 </div>
                 <h4 className="text-sm font-bold text-white">Daily Production Capacity</h4>

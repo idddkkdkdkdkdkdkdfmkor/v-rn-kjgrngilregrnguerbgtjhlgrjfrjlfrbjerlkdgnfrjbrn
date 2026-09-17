@@ -49,7 +49,7 @@ export const ClientLinkShareModal: React.FC<ClientLinkShareModalProps> = ({
       page: 'studio' as const,
       url: `${baseUrl}?page=studio`,
       icon: Sparkles,
-      color: 'text-blue-600 bg-blue-50 border-blue-200',
+      color: 'text-brand-primary bg-brand-mint border-brand-mint',
     },
     {
       id: 'quote',
@@ -94,13 +94,13 @@ export const ClientLinkShareModal: React.FC<ClientLinkShareModalProps> = ({
         {/* Header */}
         <div className="p-6 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-600/30 text-blue-400 flex items-center justify-center border border-blue-500/30">
+            <div className="w-10 h-10 rounded-xl bg-brand-primary/30 text-blue-400 flex items-center justify-center border border-brand-mint0/30">
               <Share2 className="w-5 h-5" />
             </div>
             <div>
               <h3 className="text-[16px] font-semibold text-white flex items-center gap-2">
                 Client links and standalone portals
-                <span className="text-[10px] uppercase font-medium tracking-wider px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                <span className="text-[10px] uppercase font-medium tracking-wider px-2 py-0.5 rounded-full bg-brand-mint0/20 text-blue-300 border border-brand-mint0/30">
                   Direct access
                 </span>
               </h3>
@@ -119,8 +119,8 @@ export const ClientLinkShareModal: React.FC<ClientLinkShareModalProps> = ({
 
         {/* Body list of links */}
         <div className="p-6 overflow-y-auto space-y-4 bg-slate-50/50">
-          <div className="p-3.5 rounded-2xl bg-blue-50 border border-blue-200 text-blue-950 text-[13px] font-normal flex items-start gap-3">
-            <ShieldCheck className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+          <div className="p-3.5 rounded-2xl bg-brand-mint border border-brand-mint text-blue-950 text-[13px] font-normal flex items-start gap-3">
+            <ShieldCheck className="w-5 h-5 text-brand-primary shrink-0 mt-0.5" />
             <div>
               <p className="font-semibold text-[#0F172A]">Standalone client links</p>
               <p className="text-blue-900 text-[12px] mt-0.5">

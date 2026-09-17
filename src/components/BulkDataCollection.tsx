@@ -116,8 +116,8 @@ export const BulkDataCollection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-3">
-            <Database className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-mint border border-brand-mint text-brand-dark text-xs font-bold uppercase tracking-wider mb-3">
+            <Database className="w-3.5 h-3.5 text-brand-primary" />
             Seamless Onboarding Pipeline
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -165,12 +165,12 @@ export const BulkDataCollection: React.FC = () => {
           </div>
 
           {/* Method 2: Google Forms Auto-Generation (Google Workspace Integration) */}
-          <div className="p-6 rounded-2xl bg-blue-50/70 border border-blue-200 flex flex-col justify-between ring-1 ring-blue-600/20">
+          <div className="p-6 rounded-2xl bg-brand-mint/70 border border-brand-mint flex flex-col justify-between ring-1 ring-brand-primary/20">
             <div>
-              <div className="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center mb-4 shadow-sm shadow-blue-600/30">
+              <div className="w-12 h-12 rounded-xl bg-brand-primary text-white flex items-center justify-center mb-4 shadow-sm shadow-brand-primary/30">
                 <Sparkles className="w-6 h-6" />
               </div>
-              <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 text-[10px] font-bold uppercase mb-1">
+              <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-brand-mint text-blue-800 text-[10px] font-bold uppercase mb-1">
                 Google Workspace Powered
               </div>
               <h3 className="text-lg font-bold text-slate-900">2. Auto-Generate Google Form</h3>
@@ -189,7 +189,7 @@ export const BulkDataCollection: React.FC = () => {
                   type="text"
                   value={formInstitutionName}
                   onChange={(e) => setFormInstitutionName(e.target.value)}
-                  className="w-full px-3 py-1.5 text-xs bg-white border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-1.5 text-xs bg-white border border-brand-mint rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-mint0"
                 />
               </div>
 
@@ -212,7 +212,7 @@ export const BulkDataCollection: React.FC = () => {
               <button
                 onClick={handleCreateGoogleForm}
                 disabled={isCreatingForm}
-                className="w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-md shadow-blue-600/20 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+                className="w-full py-2.5 px-4 rounded-xl bg-brand-primary hover:bg-brand-dark text-white text-xs font-bold shadow-md shadow-brand-primary/20 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
               >
                 <Sparkles className="w-4 h-4" />
                 <span>{isCreatingForm ? 'Creating Form...' : 'Generate Google Form Now'}</span>
@@ -262,7 +262,7 @@ export const BulkDataCollection: React.FC = () => {
 
         {/* Status Message Notification Bar */}
         {statusMessage && (
-          <div className="max-w-xl mx-auto p-3 rounded-xl bg-blue-50 border border-blue-200 text-xs text-blue-900 text-center font-medium shadow-xs">
+          <div className="max-w-xl mx-auto p-3 rounded-xl bg-brand-mint border border-brand-mint text-xs text-blue-900 text-center font-medium shadow-xs">
             {statusMessage}
           </div>
         )}

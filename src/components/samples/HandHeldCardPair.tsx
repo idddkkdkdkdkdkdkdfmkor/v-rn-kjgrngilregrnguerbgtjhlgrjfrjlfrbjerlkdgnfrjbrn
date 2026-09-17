@@ -95,7 +95,7 @@ export const HandHeldCardPair: React.FC<HandHeldCardPairProps> = ({
           {/* ========================================================= */}
           <div className="flex flex-col items-center w-full">
             <div className="text-xs font-bold text-slate-600 mb-2 uppercase tracking-wider flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-blue-600 inline-block" />
+              <span className="w-2 h-2 rounded-full bg-brand-primary inline-block" />
               Front Side Face (Obverse)
             </div>
 
@@ -464,7 +464,7 @@ export const HandHeldCardPair: React.FC<HandHeldCardPairProps> = ({
           <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
             <button
               onClick={() => onOpenInquiry?.(sample.institutionName)}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs transition-colors shadow-xs"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-brand-primary hover:bg-brand-dark text-white font-semibold text-xs transition-colors shadow-xs"
             >
               Order Similar PVC Cards →
             </button>

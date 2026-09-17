@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://idcraftindia.com/sitemap.xml
+Sitemap: https://idcraft.dpdns.org/sitemap.xml

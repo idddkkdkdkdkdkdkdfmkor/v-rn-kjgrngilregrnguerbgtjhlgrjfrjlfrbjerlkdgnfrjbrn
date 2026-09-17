@@ -38,7 +38,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white selection:bg-blue-600 selection:text-white pt-[72px]">
+    <div className="min-h-screen bg-slate-900 text-white selection:bg-brand-primary selection:text-white pt-[72px]">
       {/* Top Utility Bar for Dedicated Client Page */}
       <div className="sticky top-[72px] z-30 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 py-3.5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
@@ -53,7 +53,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({
 
           {/* Page Badge */}
           <div className="hidden md:flex items-center gap-2 text-[12px] text-slate-400">
-            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-brand-mint0 animate-pulse" />
             <span className="font-medium text-slate-200">Institutional client portal</span>
             <span>•</span>
             <span className="font-normal">Live 3D customizer & proofing</span>
@@ -88,7 +88,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({
 
       {/* Hero Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-4 text-center">
-        <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[12px] font-semibold uppercase tracking-wider mb-3">
+        <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-mint0/10 text-blue-400 border border-brand-mint0/20 text-[12px] font-semibold uppercase tracking-wider mb-3">
           <Sparkles className="w-3.5 h-3.5" />
           Interactive 3D proofing studio
         </span>

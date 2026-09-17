@@ -905,7 +905,7 @@ export const SuperAdminPanel: React.FC = () => {
                               onClick={() => setLamination('HOLO')}
                               className={`rounded-[16px] p-3 flex flex-col items-center justify-center gap-2 cursor-pointer transition-colors ${lamination === 'HOLO' ? 'border-2 border-[#14764B] bg-[#F4F8F6]' : 'border border-slate-200 hover:border-[#14764B] hover:bg-[#F4F8F6]'}`}
                             >
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200"></div>
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-200 via-purple-200 to-brand-mint"></div>
                               <span className={`text-[12px] font-black ${lamination === 'HOLO' ? 'text-[#14764B]' : 'text-slate-700'}`}>Hologram</span>
                             </div>
                           </div>
@@ -1085,7 +1085,7 @@ export const SuperAdminPanel: React.FC = () => {
                       
                       <div className="w-full space-y-3">
                         <button onClick={addTextElement} className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-[16px] flex items-center gap-4 hover:bg-slate-200 transition-colors cursor-pointer">
-                          <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600"><Type className="w-4 h-4" /></div>
+                          <div className="w-8 h-8 rounded-lg bg-brand-mint flex items-center justify-center text-brand-primary"><Type className="w-4 h-4" /></div>
                           <span className="text-[13px] font-bold text-slate-600">Add text element</span>
                         </button>
                       </div>
@@ -1284,7 +1284,7 @@ export const SuperAdminPanel: React.FC = () => {
                   <div>
                     <h4 className="text-[13px] font-black text-slate-500 uppercase tracking-widest mb-1">Total Members</h4>
                     <div className="text-[42px] font-black text-slate-900 leading-none mb-2">{SAMPLE_MEMBERS.length}</div>
-                    <div className="text-[13px] font-bold text-blue-600 flex items-center gap-1">
+                    <div className="text-[13px] font-bold text-brand-primary flex items-center gap-1">
                       <span className="text-lg leading-none">↗</span> Sample roster loaded
                     </div>
                   </div>

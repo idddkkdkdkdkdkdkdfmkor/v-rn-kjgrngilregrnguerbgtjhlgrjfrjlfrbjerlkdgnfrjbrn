@@ -377,7 +377,7 @@ export const BulkPricingCalculator: React.FC<{ onOpenSampleKit: () => void }> = 
                 {quote.hologramPrice > 0 && <li>3D Security Hologram Stamp</li>}
               </ul>
               <div className="mt-4 p-3 bg-blue-900/30 border border-blue-800 rounded-lg">
-                <p className="text-xs text-blue-200">
+                <p className="text-xs text-brand-mint">
                   Submit this configuration to get a customized price quote with our best B2B wholesale rates.
                 </p>
               </div>

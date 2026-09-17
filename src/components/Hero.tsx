@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-60 pointer-events-none" />
 
       {/* Soft ambient blue mesh */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-blue-100/35 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-brand-mint/35 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -92,7 +92,7 @@ export const Hero: React.FC<HeroProps> = ({
               <button
                 id="hero-products-btn"
                 onClick={onExploreProducts}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-[16px] tracking-[-0.01em] text-white bg-[#2563EB] hover:bg-[#1D4ED8] hover:shadow-lg hover:shadow-blue-600/20 transition-all group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-[16px] tracking-[-0.01em] text-white bg-[#2563EB] hover:bg-[#1D4ED8] hover:shadow-lg hover:shadow-brand-primary/20 transition-all group"
               >
                 <span>Explore products</span>
                 <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-0.5 transition-transform" />
@@ -176,8 +176,8 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Lanyard Top Suspension */}
             <div className="relative w-full flex flex-col items-center select-none">
               {/* Lanyard Ribbon */}
-              <div className="w-14 h-16 bg-gradient-to-b from-blue-700 to-blue-800 rounded-t-sm shadow-md flex items-center justify-center overflow-hidden border-x border-blue-900/40 relative">
-                <div className="text-[9px] text-blue-200/90 font-bold uppercase tracking-widest rotate-90 whitespace-nowrap">
+              <div className="w-14 h-16 bg-gradient-to-b from-brand-dark to-blue-800 rounded-t-sm shadow-md flex items-center justify-center overflow-hidden border-x border-blue-900/40 relative">
+                <div className="text-[9px] text-brand-mint/90 font-bold uppercase tracking-widest rotate-90 whitespace-nowrap">
                   IDCRAFT INDIA • PREMIUM
                 </div>
                 <div className="absolute inset-y-0 left-0 w-1 bg-white/20" />
@@ -225,7 +225,7 @@ export const Hero: React.FC<HeroProps> = ({
                     {/* Institution Header */}
                     <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                       <div className="flex items-center gap-2.5">
-                        <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-extrabold text-sm shadow-sm">
+                        <div className="w-8 h-8 rounded-lg bg-brand-primary flex items-center justify-center text-white font-extrabold text-sm shadow-sm">
                           DPS
                         </div>
                         <div>
@@ -238,7 +238,7 @@ export const Hero: React.FC<HeroProps> = ({
                         </div>
                       </div>
                       <div className="flex items-center gap-1 text-slate-400">
-                        <Wifi className="w-4 h-4 text-blue-600 rotate-90" title="RFID 13.56 MHz" />
+                        <Wifi className="w-4 h-4 text-brand-primary rotate-90" title="RFID 13.56 MHz" />
                       </div>
                     </div>
 
@@ -248,7 +248,7 @@ export const Hero: React.FC<HeroProps> = ({
                         <img
                           src="/ceo-photo.jpg"
                           alt="Student Profile Sample"
-                          className="w-24 h-28 object-cover rounded-xl border-2 border-blue-600 shadow-md"
+                          className="w-24 h-28 object-cover rounded-xl border-2 border-brand-primary shadow-md"
                         />
                         {/* Hologram Security Seal */}
                         <div className="absolute -bottom-2 -right-2 w-7 h-7 rounded-full hologram-effect border border-white shadow-xs flex items-center justify-center text-[8px] font-bold text-slate-800">
@@ -257,7 +257,7 @@ export const Hero: React.FC<HeroProps> = ({
                       </div>
 
                       <h3 className="mt-3 text-base font-semibold text-[#0F172A]">Jagjeet Singh</h3>
-                      <p className="text-[12px] font-medium text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full mt-0.5">
+                      <p className="text-[12px] font-medium text-brand-dark bg-brand-mint px-2.5 py-0.5 rounded-full mt-0.5">
                         Class X – Section B
                       </p>
                     </div>
@@ -307,7 +307,7 @@ export const Hero: React.FC<HeroProps> = ({
                     </div>
 
                     {/* QR Code & Bus Route */}
-                    <div className="flex items-center gap-3 bg-blue-50/70 p-2.5 rounded-xl border border-blue-100">
+                    <div className="flex items-center gap-3 bg-brand-mint/70 p-2.5 rounded-xl border border-brand-mint">
                       <div className="w-16 h-16 bg-white p-1 rounded-lg border border-slate-200 flex items-center justify-center shrink-0">
                         <QrCode className="w-14 h-14 text-slate-900" />
                       </div>
@@ -348,7 +348,7 @@ export const Hero: React.FC<HeroProps> = ({
                 onClick={() => setIsFlipped(!isFlipped)}
                 className="mt-4 flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-medium cursor-pointer transition-colors"
               >
-                <RotateCw className="w-3 h-3 text-blue-600" />
+                <RotateCw className="w-3 h-3 text-brand-primary" />
                 <span>Click card to inspect {isFlipped ? 'Front' : 'Back'} side</span>
               </div>
             </div>

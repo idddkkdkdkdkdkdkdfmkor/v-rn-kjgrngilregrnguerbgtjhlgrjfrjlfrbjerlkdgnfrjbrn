@@ -160,7 +160,7 @@ export const IDCraftLogo: React.FC<IDCraftLogoProps> = ({
             ? 'bg-slate-900 border border-slate-700'
             : theme === 'monochrome'
             ? 'bg-slate-100 border border-slate-300'
-            : 'bg-blue-50/80 border border-blue-100'
+            : 'bg-brand-mint/80 border border-brand-mint'
         } ${onClick ? 'cursor-pointer hover:scale-105 transition-transform' : ''} ${className}`}
         style={{
           width: currentSize.icon + 16,

@@ -37,8 +37,8 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4 shadow-2xs">
-            <Factory className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-mint border border-brand-mint text-brand-dark text-xs font-semibold uppercase tracking-wider mb-4 shadow-2xs">
+            <Factory className="w-3.5 h-3.5 text-brand-primary" />
             <span>Direct B2B Manufacturing Facility</span>
           </div>
 
@@ -60,7 +60,7 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
 
             <div className="relative z-10 space-y-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-blue-600/30 border border-blue-500/40 flex items-center justify-center text-blue-400 shadow-md">
+                <div className="w-12 h-12 rounded-2xl bg-brand-primary/30 border border-brand-mint0/40 flex items-center justify-center text-blue-400 shadow-md">
                   <IDCraftLogoSymbol theme="white" size={32} />
                 </div>
                 <div>
@@ -118,11 +118,11 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
                 className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs hover:shadow-md transition-shadow flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-brand-mint text-brand-primary flex items-center justify-center mb-4">
                     {idx === 0 && <Factory className="w-5 h-5" />}
                     {idx === 1 && <ShieldCheck className="w-5 h-5 text-emerald-600" />}
                     {idx === 2 && <Cpu className="w-5 h-5 text-purple-600" />}
-                    {idx === 3 && <Clock className="w-5 h-5 text-blue-600" />}
+                    {idx === 3 && <Clock className="w-5 h-5 text-brand-primary" />}
                   </div>
                   <h4 className="text-base font-bold text-[#0F172A] tracking-tight">{hl.title}</h4>
                   <p className="mt-2 text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
@@ -130,7 +130,7 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
                   </p>
                 </div>
 
-                <div className="pt-4 mt-4 border-t border-slate-100 flex items-center gap-1 text-xs font-semibold text-blue-600">
+                <div className="pt-4 mt-4 border-t border-slate-100 flex items-center gap-1 text-xs font-semibold text-brand-primary">
                   <Check className="w-3.5 h-3.5" />
                   <span>Factory Verified Standard</span>
                 </div>
@@ -140,9 +140,9 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
         </div>
 
         {/* 2. Featured CEO Message Box */}
-        <div className="relative bg-white rounded-3xl border-2 border-blue-100 shadow-xl overflow-hidden">
+        <div className="relative bg-white rounded-3xl border-2 border-brand-mint shadow-xl overflow-hidden">
           {/* Top accent banner */}
-          <div className="h-2 bg-gradient-to-r from-blue-600 via-blue-500 to-emerald-500" />
+          <div className="h-2 bg-gradient-to-r from-brand-primary via-brand-mint0 to-emerald-500" />
 
           <div className="p-8 sm:p-12 lg:p-14">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -168,8 +168,8 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
                 </div>
 
                 <div>
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-2">
-                    <Award className="w-3 h-3 text-blue-600" />
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-brand-mint border border-brand-mint text-brand-dark text-xs font-semibold mb-2">
+                    <Award className="w-3 h-3 text-brand-primary" />
                     <span>Founder & Chief Executive</span>
                   </div>
 
@@ -186,15 +186,15 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
                 <div className="mt-6 pt-5 border-t border-slate-200 w-full space-y-2 text-xs">
                   <a
                     href={`mailto:${ceo.directContact}`}
-                    className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors font-medium"
+                    className="flex items-center gap-2 text-slate-600 hover:text-brand-primary transition-colors font-medium"
                   >
-                    <Mail className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                    <Mail className="w-3.5 h-3.5 text-brand-primary shrink-0" />
                     <span>{ceo.directContact}</span>
                   </a>
 
                   <a
                     href={`tel:${COMPANY_INFO.phone}`}
-                    className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors font-medium"
+                    className="flex items-center gap-2 text-slate-600 hover:text-brand-primary transition-colors font-medium"
                   >
                     <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                     <span>{COMPANY_INFO.phone} (Factory Desk)</span>
@@ -204,9 +204,9 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
 
               {/* CEO Statement & Guarantee (8 cols) */}
               <div className="lg:col-span-8 space-y-6">
-                <div className="flex items-center gap-2 text-blue-600">
-                  <Quote className="w-8 h-8 text-blue-500/30 -scale-x-100" />
-                  <span className="text-xs font-semibold uppercase tracking-widest text-blue-700">
+                <div className="flex items-center gap-2 text-brand-primary">
+                  <Quote className="w-8 h-8 text-brand-mint0/30 -scale-x-100" />
+                  <span className="text-xs font-semibold uppercase tracking-widest text-brand-dark">
                     A Message from Our Leadership
                   </span>
                 </div>
@@ -229,9 +229,9 @@ export const AboutCEOSection: React.FC<AboutCEOSectionProps> = ({
                   <div className="flex flex-wrap items-center gap-3">
                     <button
                       onClick={onOpenSampleKit}
-                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold text-xs sm:text-sm border border-blue-200 transition-colors shadow-2xs"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-mint hover:bg-brand-mint text-brand-dark font-semibold text-xs sm:text-sm border border-brand-mint transition-colors shadow-2xs"
                     >
-                      <PackageCheck className="w-4 h-4 text-blue-600" />
+                      <PackageCheck className="w-4 h-4 text-brand-primary" />
                       <span>Request Free Sample Kit</span>
                     </button>
 

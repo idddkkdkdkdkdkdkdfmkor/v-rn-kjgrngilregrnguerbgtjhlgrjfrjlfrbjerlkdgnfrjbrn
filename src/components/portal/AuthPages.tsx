@@ -78,7 +78,7 @@ export const LoginPage: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="admin@institution.edu.in"
-                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                 />
               </div>
             </div>
@@ -86,7 +86,7 @@ export const LoginPage: React.FC = () => {
             <div>
               <div className="flex justify-between items-center mb-1.5">
                 <label className="block text-sm font-semibold text-slate-700">Password</label>
-                <button type="button" onClick={() => toast.info('Please contact support to reset your password.')} className="text-xs font-medium text-blue-600 hover:text-blue-700">Forgot?</button>
+                <button type="button" onClick={() => toast.info('Please contact support to reset your password.')} className="text-xs font-medium text-brand-primary hover:text-brand-dark">Forgot?</button>
               </div>
               <div className="relative">
                 <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
@@ -94,12 +94,12 @@ export const LoginPage: React.FC = () => {
                   type="password" 
                   required
                   placeholder="••••••••"
-                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                 />
               </div>
             </div>
 
-            <button type="submit" className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-colors flex justify-center items-center gap-2">
+            <button type="submit" className="w-full py-3 bg-brand-primary hover:bg-brand-dark text-white rounded-xl font-semibold transition-colors flex justify-center items-center gap-2">
               Secure Login <ArrowRight className="w-4 h-4" />
             </button>
             
@@ -121,7 +121,7 @@ export const LoginPage: React.FC = () => {
           </form>
 
           <p className="text-center text-sm text-slate-500 mt-8">
-            Don't have an institutional account? <button onClick={() => navigate('/portal/register')} className="font-semibold text-blue-600 hover:underline">Register Here</button>
+            Don't have an institutional account? <button onClick={() => navigate('/portal/register')} className="font-semibold text-brand-primary hover:underline">Register Here</button>
           </p>
         </div>
       </div>
@@ -161,7 +161,7 @@ export const RegisterPage: React.FC = () => {
               saveSession(session);
               navigate('/portal/dashboard');
             }}
-            className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-colors"
+            className="w-full py-3 bg-brand-primary hover:bg-brand-dark text-white rounded-xl font-semibold transition-colors"
           >
             Access Demo Dashboard Anyway
           </button>
@@ -193,9 +193,9 @@ export const RegisterPage: React.FC = () => {
           </div>
 
           <form onSubmit={handleRegister} className="space-y-6">
-            <div className="bg-blue-50/50 border border-blue-100 rounded-2xl p-6">
+            <div className="bg-brand-mint/50 border border-brand-mint rounded-2xl p-6">
               <h3 className="font-semibold text-slate-900 flex items-center gap-2 mb-4">
-                <Building2 className="w-4 h-4 text-blue-600" /> Institution Details
+                <Building2 className="w-4 h-4 text-brand-primary" /> Institution Details
               </h3>
               
               <div className="space-y-4">
@@ -215,7 +215,7 @@ export const RegisterPage: React.FC = () => {
                       onFocus={() => setShowDropdown(true)}
                       onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
                       placeholder="Search for your school or company..."
-                      className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                     />
                   </div>
                   
@@ -239,7 +239,7 @@ export const RegisterPage: React.FC = () => {
                       ) : (
                         <div className="px-4 py-3 text-sm text-slate-500 flex flex-col gap-1">
                           <span>No exact matches found.</span>
-                          <span className="text-xs text-blue-600 font-medium">Click to register "{searchTerm}" as a new institution.</span>
+                          <span className="text-xs text-brand-primary font-medium">Click to register "{searchTerm}" as a new institution.</span>
                         </div>
                       )}
                     </div>
@@ -252,11 +252,11 @@ export const RegisterPage: React.FC = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1.5">City</label>
-                    <input type="text" required className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" placeholder="e.g. New Delhi" />
+                    <input type="text" required className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0" placeholder="e.g. New Delhi" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1.5">Branch Count</label>
-                    <select className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500">
+                    <select className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0">
                       <option>1 (Single Campus)</option>
                       <option>2 - 5 Branches</option>
                       <option>6 - 20 Branches</option>
@@ -276,11 +276,11 @@ export const RegisterPage: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1.5">Your Name</label>
-                    <input type="text" required className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" />
+                    <input type="text" required className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1.5">Designation</label>
-                    <input type="text" required placeholder="e.g. Principal / HR Head" className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" />
+                    <input type="text" required placeholder="e.g. Principal / HR Head" className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0" />
                   </div>
                 </div>
                 
@@ -289,14 +289,14 @@ export const RegisterPage: React.FC = () => {
                     <label className="block text-sm font-medium text-slate-700 mb-1.5">Official Email</label>
                     <div className="relative">
                       <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-                      <input type="email" required className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" />
+                      <input type="email" required className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0" />
                     </div>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1.5">Mobile Number</label>
                     <div className="relative">
                       <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-                      <input type="tel" required className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" />
+                      <input type="tel" required className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-mint0" />
                     </div>
                   </div>
                 </div>

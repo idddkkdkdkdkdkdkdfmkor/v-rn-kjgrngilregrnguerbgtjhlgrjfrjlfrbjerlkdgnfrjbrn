@@ -151,13 +151,13 @@ export const IDVerseMasterGallery: React.FC<IDVerseMasterGalleryProps> = ({
     <section id="pvc-showcase" className="relative py-20 bg-slate-950 text-slate-100 overflow-hidden">
       {/* Background Subtle Tech Grid & Ambient Glows */}
       <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-25 pointer-events-none" />
-      <div className="absolute top-1/4 -left-48 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 -left-48 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-900/40 border border-blue-700/50 text-blue-300 text-xs font-semibold mb-4 shadow-sm backdrop-blur-xs">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-900/40 border border-brand-dark/50 text-blue-300 text-xs font-semibold mb-4 shadow-sm backdrop-blur-xs">
             <Sparkles className="w-3.5 h-3.5 text-blue-400" />
             <span>IDVERSE MASTER SPECIFICATION ARCHIVE • 200 DUMMY PVC CARDS</span>
           </div>
@@ -199,13 +199,13 @@ export const IDVerseMasterGallery: React.FC<IDVerseMasterGalleryProps> = ({
               onClick={() => setSelectedCategory('all')}
               className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
                 selectedCategory === 'all'
-                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30 scale-102 ring-2 ring-blue-400/40'
+                  ? 'bg-brand-primary text-white shadow-lg shadow-brand-primary/30 scale-102 ring-2 ring-blue-400/40'
                   : 'bg-slate-900/90 text-slate-300 hover:bg-slate-800 border border-slate-800'
               }`}
             >
               <Layers className="w-3.5 h-3.5" />
               <span>All 10 Categories</span>
-              <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/40 text-blue-200">
+              <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/40 text-brand-mint">
                 200
               </span>
             </button>
@@ -216,7 +216,7 @@ export const IDVerseMasterGallery: React.FC<IDVerseMasterGalleryProps> = ({
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
                   selectedCategory === cat.id
-                    ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30 scale-102 ring-2 ring-blue-400/40'
+                    ? 'bg-brand-primary text-white shadow-md shadow-brand-primary/30 scale-102 ring-2 ring-blue-400/40'
                     : 'bg-slate-900/90 text-slate-300 hover:bg-slate-800 border border-slate-800 hover:text-white'
                 }`}
               >
@@ -251,7 +251,7 @@ export const IDVerseMasterGallery: React.FC<IDVerseMasterGalleryProps> = ({
               {onOpenBulkOrder && (
                 <button
                   onClick={() => onOpenBulkOrder(activeCategoryMeta.name)}
-                  className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shadow-md transition-all flex items-center gap-1.5"
+                  className="px-4 py-2 rounded-xl bg-brand-primary hover:bg-brand-mint0 text-white text-xs font-bold shadow-md transition-all flex items-center gap-1.5"
                 >
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>Order Bulk {activeCategoryMeta.name}s</span>
@@ -271,7 +271,7 @@ export const IDVerseMasterGallery: React.FC<IDVerseMasterGalleryProps> = ({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search dummy name, ID number, role, blood group, city..."
-              className="w-full pl-10 pr-4 py-2 bg-slate-950 border border-slate-700/80 rounded-xl text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
+              className="w-full pl-10 pr-4 py-2 bg-slate-950 border border-slate-700/80 rounded-xl text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-brand-mint0 focus:ring-1 focus:ring-brand-mint0 transition-colors"
             />
             {searchQuery && (
               <button
@@ -289,7 +289,7 @@ export const IDVerseMasterGallery: React.FC<IDVerseMasterGalleryProps> = ({
             <select
               value={selectedOrientation}
               onChange={(e) => setSelectedOrientation(e.target.value as any)}
-              className="bg-slate-950 border border-slate-700 text-slate-300 text-xs rounded-xl px-3 py-2 focus:outline-none focus:border-blue-500"
+              className="bg-slate-950 border border-slate-700 text-slate-300 text-xs rounded-xl px-3 py-2 focus:outline-none focus:border-brand-mint0"
             >
               <option value="all">All Orientations</option>
               <option value="vertical">Vertical (Portrait)</option>
@@ -300,7 +300,7 @@ export const IDVerseMasterGallery: React.FC<IDVerseMasterGalleryProps> = ({
             <select
               value={selectedTheme}
               onChange={(e) => setSelectedTheme(e.target.value)}
-              className="bg-slate-950 border border-slate-700 text-slate-300 text-xs rounded-xl px-3 py-2 focus:outline-none focus:border-blue-500"
+              className="bg-slate-950 border border-slate-700 text-slate-300 text-xs rounded-xl px-3 py-2 focus:outline-none focus:border-brand-mint0"
             >
               <option value="all">All Theme Palettes</option>
               {Object.entries(THEME_COLOR_CONFIG).map(([key, config]) => (
@@ -346,7 +346,7 @@ export const IDVerseMasterGallery: React.FC<IDVerseMasterGalleryProps> = ({
                 setSelectedTheme('all');
                 setSelectedOrientation('all');
               }}
-              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-xl text-xs font-semibold hover:bg-blue-500 transition-colors"
+              className="mt-4 px-4 py-2 bg-brand-primary text-white rounded-xl text-xs font-semibold hover:bg-brand-mint0 transition-colors"
             >
               Reset All Filters
             </button>

@@ -168,7 +168,7 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({
                       </button>
                       <button
                         onClick={() => onOpenQuickQuote(product.name)}
-                        className="flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl bg-[#2563EB] hover:bg-[#1D4ED8] hover:shadow-md hover:shadow-blue-600/20 text-white text-[13px] font-medium transition-all"
+                        className="flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl bg-[#2563EB] hover:bg-[#1D4ED8] hover:shadow-md hover:shadow-brand-primary/20 text-white text-[13px] font-medium transition-all"
                       >
                         <span>Bulk quote</span>
                         <ArrowUpRight className="w-3.5 h-3.5 text-white" />

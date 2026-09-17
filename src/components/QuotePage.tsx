@@ -41,7 +41,7 @@ export const QuotePage: React.FC<QuotePageProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-blue-600 selection:text-white pt-[72px]">
+    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-brand-primary selection:text-white pt-[72px]">
       {/* Top Utility Bar for Dedicated Client Page */}
       <div className="sticky top-[72px] z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 py-3.5 px-4 sm:px-6 lg:px-8 shadow-xs">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">

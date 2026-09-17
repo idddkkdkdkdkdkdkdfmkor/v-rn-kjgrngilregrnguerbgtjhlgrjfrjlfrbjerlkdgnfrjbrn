@@ -5,7 +5,7 @@ import { COMPANY_INFO } from '../data/mockData';
 const LegalPageContainer = ({ title, icon: Icon, children }: { title: string, icon: any, children: React.ReactNode }) => (
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 mt-16">
     <div className="flex items-center gap-4 mb-8 pb-6 border-b border-slate-200">
-      <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center shrink-0">
+      <div className="w-12 h-12 bg-brand-mint text-brand-primary rounded-xl flex items-center justify-center shrink-0">
         <Icon className="w-6 h-6" />
       </div>
       <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">{title}</h1>
@@ -124,9 +124,9 @@ export const ContactUsPage = () => (
         <div><strong className="text-slate-900">Business Name:</strong> ID Craft India Pvt. Ltd.</div>
         <div><strong className="text-slate-900">GSTIN:</strong> 09AAACI1234F1Z8</div>
         <div><strong className="text-slate-900">Central Works Address:</strong> {COMPANY_INFO.factoryAddress}</div>
-        <div><strong className="text-slate-900">Email Address:</strong> <a href={`mailto:${COMPANY_INFO.email}`} className="text-blue-600 hover:underline">{COMPANY_INFO.email}</a></div>
-        <div><strong className="text-slate-900">Phone Number:</strong> <a href={`tel:${COMPANY_INFO.phone}`} className="text-blue-600 hover:underline">{COMPANY_INFO.phone}</a></div>
-        <div><strong className="text-slate-900">WhatsApp Number:</strong> <a href={`https://wa.me/${COMPANY_INFO.whatsappNumber}`} className="text-blue-600 hover:underline">{COMPANY_INFO.phone}</a></div>
+        <div><strong className="text-slate-900">Email Address:</strong> <a href={`mailto:${COMPANY_INFO.email}`} className="text-brand-primary hover:underline">{COMPANY_INFO.email}</a></div>
+        <div><strong className="text-slate-900">Phone Number:</strong> <a href={`tel:${COMPANY_INFO.phone}`} className="text-brand-primary hover:underline">{COMPANY_INFO.phone}</a></div>
+        <div><strong className="text-slate-900">WhatsApp Number:</strong> <a href={`https://wa.me/${COMPANY_INFO.whatsappNumber}`} className="text-brand-primary hover:underline">{COMPANY_INFO.phone}</a></div>
         <div><strong className="text-slate-900">Business Hours:</strong> Monday – Saturday: 9:00 AM – 7:30 PM IST</div>
       </div>
     </div>

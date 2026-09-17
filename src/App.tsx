@@ -26,6 +26,7 @@ const RealPVCSamplesPage = React.lazy(() => import('./components/samples/RealPVC
 const StudioPage = React.lazy(() => import('./components/StudioPage').then(m => ({ default: m.StudioPage })));
 const QuotePage = React.lazy(() => import('./components/QuotePage').then(m => ({ default: m.QuotePage })));
 const DataCollectionPage = React.lazy(() => import('./components/DataCollectionPage').then(m => ({ default: m.DataCollectionPage })));
+const ReviewGenerator = React.lazy(() => import('./components/ReviewGeneratorApp/App'));
 
 const SchoolSolutionsPage = React.lazy(() => import('./components/solutions/SchoolSolutionsPage').then(m => ({ default: m.SchoolSolutionsPage })));
 const CorporateSolutionsPage = React.lazy(() => import('./components/solutions/CorporateSolutionsPage').then(m => ({ default: m.CorporateSolutionsPage })));
@@ -113,14 +114,14 @@ export default function App() {
 
   const Loader = () => (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-primary"></div>
     </div>
   );
 
   const isDashboard = location.pathname.startsWith('/portal/dashboard') || location.pathname.startsWith('/portal/superadmin');
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white flex flex-col">
+    <div className="min-h-screen bg-white text-slate-900 font-sans antialiased selection:bg-brand-primary selection:text-white flex flex-col">
       <Helmet>
         <title>ID Craft India | Premium PVC ID Cards</title>
         <meta name="description" content="Premium PVC ID Cards for Schools, Colleges & Companies Across India." />
@@ -155,6 +156,15 @@ export default function App() {
                 />
               </div>
             </div>
+          } />
+
+          <Route path="/review-gen" element={
+            <Suspense fallback={<Loader />}>
+              <Helmet><title>Leave a Review | ID Craft India</title></Helmet>
+              <div className="pt-[72px]">
+                 <ReviewGenerator />
+              </div>
+            </Suspense>
           } />
 
           <Route path="/samples" element={

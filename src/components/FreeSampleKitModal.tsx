@@ -115,7 +115,7 @@ export const FreeSampleKitModal: React.FC<FreeSampleKitModalProps> = ({ isOpen, 
                     value={formData.institution}
                     onChange={(e) => setFormData({ ...formData, institution: e.target.value })}
                     placeholder="e.g. Delhi Public School / Infosys"
-                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                   />
                 </div>
 
@@ -127,7 +127,7 @@ export const FreeSampleKitModal: React.FC<FreeSampleKitModalProps> = ({ isOpen, 
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="e.g. Dr. Rajesh Sharma"
-                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                   />
                 </div>
 
@@ -136,7 +136,7 @@ export const FreeSampleKitModal: React.FC<FreeSampleKitModalProps> = ({ isOpen, 
                   <select
                     value={formData.role}
                     onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white"
+                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none bg-white"
                   >
                     <option>School Principal / Administrator</option>
                     <option>HR Head / People Operations</option>
@@ -157,7 +157,7 @@ export const FreeSampleKitModal: React.FC<FreeSampleKitModalProps> = ({ isOpen, 
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="+91 93365 22126"
-                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                   />
                 </div>
               </div>
@@ -172,7 +172,7 @@ export const FreeSampleKitModal: React.FC<FreeSampleKitModalProps> = ({ isOpen, 
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
                   placeholder="Campus address, Building / Floor, Landmark, City, State"
-                  className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                 />
               </div>
 
@@ -185,7 +185,7 @@ export const FreeSampleKitModal: React.FC<FreeSampleKitModalProps> = ({ isOpen, 
                     value={formData.pincode}
                     onChange={(e) => setFormData({ ...formData, pincode: e.target.value })}
                     placeholder="e.g. 110001"
-                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none"
                   />
                 </div>
 
@@ -196,7 +196,7 @@ export const FreeSampleKitModal: React.FC<FreeSampleKitModalProps> = ({ isOpen, 
                   <select
                     value={formData.quantityNeed}
                     onChange={(e) => setFormData({ ...formData, quantityNeed: e.target.value })}
-                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white"
+                    className="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-[14px] text-[#0F172A] focus:ring-2 focus:ring-brand-mint0 focus:outline-none bg-white"
                   >
                     <option>100 – 250 cards</option>
                     <option>250 – 500 cards</option>
@@ -209,7 +209,7 @@ export const FreeSampleKitModal: React.FC<FreeSampleKitModalProps> = ({ isOpen, 
 
               <button
                 type="submit"
-                className="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-[14px] shadow-xs transition-colors flex items-center justify-center gap-2 mt-2"
+                className="w-full py-3 px-4 rounded-xl bg-brand-primary hover:bg-brand-dark text-white font-medium text-[14px] shadow-xs transition-colors flex items-center justify-center gap-2 mt-2"
               >
                 <Truck className="w-4 h-4" />
                 <span>Dispatch complimentary sample kit via air courier</span>

@@ -47,7 +47,7 @@ export const GallerySection: React.FC<{ onOpenQuote: (instName: string) => void 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12 text-left">
-          <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-blue-600 mb-3 block">
+          <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-brand-primary mb-3 block">
             Production portfolio
           </span>
           <h2 className="font-semibold text-[30px] md:text-[36px] lg:text-[44px] leading-[1.15] tracking-[-0.025em] text-[#0F172A] mb-4">
@@ -66,7 +66,7 @@ export const GallerySection: React.FC<{ onOpenQuote: (instName: string) => void 
               onClick={() => setActiveCategory(tab.id)}
               className={`px-4 py-2 rounded-xl text-[14px] font-medium transition-colors ${
                 activeCategory === tab.id
-                  ? 'bg-blue-600 text-white shadow-xs'
+                  ? 'bg-brand-primary text-white shadow-xs'
                   : 'bg-slate-100 text-[#334155] hover:bg-slate-200'
               }`}
             >
@@ -116,7 +116,7 @@ export const GallerySection: React.FC<{ onOpenQuote: (instName: string) => void 
                   {/* Zoom hint on hover */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 backdrop-blur-[1px]">
                     <span className="px-3 py-1.5 rounded-full bg-white text-[#0F172A] text-[13px] font-medium shadow-md flex items-center gap-1.5">
-                      <ZoomIn className="w-3.5 h-3.5 text-blue-600" /> Inspect specs
+                      <ZoomIn className="w-3.5 h-3.5 text-brand-primary" /> Inspect specs
                     </span>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export const GallerySection: React.FC<{ onOpenQuote: (instName: string) => void 
                 {/* Details */}
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-[16px] font-semibold text-[#0F172A] leading-tight group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-[16px] font-semibold text-[#0F172A] leading-tight group-hover:text-brand-primary transition-colors">
                       {card.title}
                     </h3>
                     <p className="text-[13px] text-[#64748B] font-normal mt-1">{card.institution}</p>
@@ -143,7 +143,7 @@ export const GallerySection: React.FC<{ onOpenQuote: (instName: string) => void 
 
                   <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[12px]">
                     <span className="text-[#64748B] font-light">{card.thickness}</span>
-                    <span className="font-medium text-blue-600">Sample proof</span>
+                    <span className="font-medium text-brand-primary">Sample proof</span>
                   </div>
                 </div>
               </div>
@@ -186,7 +186,7 @@ export const GallerySection: React.FC<{ onOpenQuote: (instName: string) => void 
                 {/* Specs Info */}
                 <div className="p-6 flex flex-col justify-between">
                   <div>
-                    <span className="text-[11px] font-medium uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800">
+                    <span className="text-[11px] font-medium uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-brand-mint text-blue-800">
                       {lightboxCard.category}
                     </span>
                     <h3 className="text-[20px] font-semibold text-[#0F172A] mt-2">
@@ -240,7 +240,7 @@ export const GallerySection: React.FC<{ onOpenQuote: (instName: string) => void 
                         setLightboxCard(null);
                         onOpenQuote(inst);
                       }}
-                      className="w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-[14px] font-medium shadow-xs transition-colors"
+                      className="w-full py-2.5 px-4 rounded-xl bg-brand-primary hover:bg-brand-dark text-white text-[14px] font-medium shadow-xs transition-colors"
                     >
                       Request batch quote for this specification
                     </button>

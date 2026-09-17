@@ -182,7 +182,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <Eye className="w-3.5 h-3.5 text-[#2563EB]" />
               <span>Sample Proofs</span>
               <span className={`text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full ${
-                currentPage === 'samples' ? 'bg-white/20 text-white' : 'bg-blue-50 text-[#2563EB]'
+                currentPage === 'samples' ? 'bg-white/20 text-white' : 'bg-brand-mint text-[#2563EB]'
               }`}>
                 Real PVC
               </span>
@@ -217,7 +217,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     }}
                     className="w-full text-left p-2.5 rounded-xl hover:bg-[#F8FAFC] transition-colors flex items-center gap-3 group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-blue-50 text-[#2563EB] flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-brand-mint text-[#2563EB] flex items-center justify-center shrink-0">
                       <Eye className="w-4 h-4" />
                     </div>
                     <div>
@@ -225,7 +225,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         <span className="text-[13px] font-semibold text-[#0F172A] group-hover:text-[#2563EB]">
                           Sample Proofs Portfolio
                         </span>
-                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-blue-50 text-[#2563EB] font-bold">
+                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-brand-mint text-[#2563EB] font-bold">
                           5 Real Cards
                         </span>
                       </div>
@@ -240,7 +240,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     }}
                     className="w-full text-left p-2.5 rounded-xl hover:bg-[#F8FAFC] transition-colors flex items-center gap-3 group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-blue-50 text-[#2563EB] flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-brand-mint text-[#2563EB] flex items-center justify-center shrink-0">
                       <Sparkles className="w-4 h-4" />
                     </div>
                     <div>
@@ -248,7 +248,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         <span className="text-[13px] font-semibold text-[#0F172A] group-hover:text-[#2563EB]">
                           3D ID card studio
                         </span>
-                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-blue-50 text-[#2563EB] font-medium">
+                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-brand-mint text-[#2563EB] font-medium">
                           Link
                         </span>
                       </div>
@@ -263,7 +263,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     }}
                     className="w-full text-left p-2.5 rounded-xl hover:bg-[#F8FAFC] transition-colors flex items-center gap-3 group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-blue-50 text-[#2563EB] flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-brand-mint text-[#2563EB] flex items-center justify-center shrink-0">
                       <Calculator className="w-4 h-4" />
                     </div>
                     <div>
@@ -271,7 +271,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         <span className="text-[13px] font-semibold text-[#0F172A] group-hover:text-[#2563EB]">
                           Bulk price calculator
                         </span>
-                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-blue-50 text-[#2563EB] font-medium">
+                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-brand-mint text-[#2563EB] font-medium">
                           Link
                         </span>
                       </div>
@@ -286,7 +286,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     }}
                     className="w-full text-left p-2.5 rounded-xl hover:bg-[#F8FAFC] transition-colors flex items-center gap-3 group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-blue-50 text-[#2563EB] flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-brand-mint text-[#2563EB] flex items-center justify-center shrink-0">
                       <FileSpreadsheet className="w-4 h-4" />
                     </div>
                     <div>
@@ -294,7 +294,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         <span className="text-[13px] font-semibold text-[#0F172A] group-hover:text-[#2563EB]">
                           Bulk data collector
                         </span>
-                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-blue-50 text-[#2563EB] font-medium">
+                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-brand-mint text-[#2563EB] font-medium">
                           Link
                         </span>
                       </div>
@@ -358,7 +358,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onNavigatePage('home');
                   setMobileMenuOpen(false);
                 }}
-                className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-bold text-blue-700 bg-blue-50"
+                className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-bold text-brand-dark bg-brand-mint"
               >
                 <span>← Return to Main Website</span>
                 <ChevronRight className="w-4 h-4 text-blue-400" />
@@ -415,7 +415,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setMobileMenuOpen(false);
                   onNavigatePage('samples');
                 }}
-                className="w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold text-[#2563EB] bg-blue-50/70 mb-1.5 border border-blue-100"
+                className="w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold text-[#2563EB] bg-brand-mint/70 mb-1.5 border border-brand-mint"
               >
                 <div className="flex items-center gap-2">
                   <Eye className="w-3.5 h-3.5 text-[#2563EB]" />

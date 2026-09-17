@@ -27,7 +27,7 @@ const ThankYouPage: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
             to="/"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors shadow-md shadow-blue-600/20 gap-2"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-brand-primary text-white font-semibold hover:bg-brand-dark transition-colors shadow-md shadow-brand-primary/20 gap-2"
           >
             Return to Homepage
             <ArrowRight className="w-4 h-4" />
