@@ -1,0 +1,46 @@
+name: IDCraft Marketing OS Automation
+
+on:
+  schedule:
+    # Runs at 03:30 UTC every day (which is 09:00 AM IST)
+    - cron: '30 3 * * *'
+    
+    # Review Replier runs every 4 hours
+    - cron: '0 */4 * * *'
+  
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+
+jobs:
+  run-marketing-os:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'idcraft-marketing-os/package-lock.json'
+          
+      - name: Install Dependencies
+        working-directory: ./idcraft-marketing-os
+        run: npm ci
+        
+      - name: Run Daily Post Engine (Only at 9 AM IST)
+        if: github.event.schedule == '30 3 * * *' || github.event_name == 'workflow_dispatch'
+        working-directory: ./idcraft-marketing-os
+        env:
+          GOOGLE_LOCATION_ID: ${{ secrets.GOOGLE_LOCATION_ID }}
+          GOOGLE_ACCESS_TOKEN: ${{ secrets.GOOGLE_ACCESS_TOKEN }}
+        run: node daily_post_engine.js
+        
+      - name: Run Review Reply Engine
+        working-directory: ./idcraft-marketing-os
+        env:
+          GOOGLE_LOCATION_ID: ${{ secrets.GOOGLE_LOCATION_ID }}
+          GOOGLE_ACCESS_TOKEN: ${{ secrets.GOOGLE_ACCESS_TOKEN }}
+        run: node review_reply_engine.js
