@@ -35,4 +35,8 @@ cron.schedule('0 */4 * * *', () => {
   runScript('review_reply_engine.js');
 });
 
+// 3. WhatsApp Lead Bot (Runs continuously)
+console.log('\n⏰ STARTING BACKGROUND SERVICE: WhatsApp Lead Bot...');
+runScript('whatsapp_lead_bot.js');
+
 console.log('⏳ Waiting for next cron trigger...\n');
