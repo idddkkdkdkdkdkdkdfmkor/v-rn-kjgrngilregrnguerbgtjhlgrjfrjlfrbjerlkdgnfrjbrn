@@ -63,8 +63,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
         `Please share the formal proforma quote & design layout.`
     );
 
-    window.open(`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=${text}`, '_blank');
-    window.location.href = '/thank-you';
+    window.location.href = `https://wa.me/${COMPANY_INFO.whatsappNumber}?text=${text}`;
   };
 
   return (
