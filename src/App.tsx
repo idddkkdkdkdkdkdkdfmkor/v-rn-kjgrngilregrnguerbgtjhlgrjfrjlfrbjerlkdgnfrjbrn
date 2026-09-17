@@ -27,6 +27,7 @@ const StudioPage = React.lazy(() => import('./components/StudioPage').then(m => 
 const QuotePage = React.lazy(() => import('./components/QuotePage').then(m => ({ default: m.QuotePage })));
 const DataCollectionPage = React.lazy(() => import('./components/DataCollectionPage').then(m => ({ default: m.DataCollectionPage })));
 const ReviewGenerator = React.lazy(() => import('./components/ReviewGeneratorApp/App'));
+const MarketingGuidePage = React.lazy(() => import('./components/MarketingGuidePage').then(m => ({ default: m.MarketingGuidePage })));
 
 const SchoolSolutionsPage = React.lazy(() => import('./components/solutions/SchoolSolutionsPage').then(m => ({ default: m.SchoolSolutionsPage })));
 const CorporateSolutionsPage = React.lazy(() => import('./components/solutions/CorporateSolutionsPage').then(m => ({ default: m.CorporateSolutionsPage })));
@@ -119,6 +120,9 @@ export default function App() {
   );
 
   const isDashboard = location.pathname.startsWith('/portal/dashboard') || location.pathname.startsWith('/portal/superadmin');
+  const isReviewGen = location.pathname.startsWith('/review-gen');
+  const isMarketingGuide = location.pathname.startsWith('/marketing-guide');
+  const hideLayout = isDashboard || isReviewGen || isMarketingGuide;
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans antialiased selection:bg-brand-primary selection:text-white flex flex-col">
@@ -127,7 +131,7 @@ export default function App() {
         <meta name="description" content="Premium PVC ID Cards for Schools, Colleges & Companies Across India." />
       </Helmet>
 
-      {!isDashboard && (
+      {!hideLayout && (
         <Navbar 
           currentPage={currentPage}
           onNavigatePage={handleNavigatePage}
@@ -164,6 +168,12 @@ export default function App() {
               <div className="pt-[72px] review-gen-wrapper">
                  <ReviewGenerator />
               </div>
+            </Suspense>
+          } />
+
+          <Route path="/marketing-guide" element={
+            <Suspense fallback={<Loader />}>
+              <MarketingGuidePage />
             </Suspense>
           } />
 
@@ -263,7 +273,7 @@ export default function App() {
         </Routes>
       </main>
 
-      {!isDashboard && (
+      {!hideLayout && (
         <>
           <Footer
             onOpenSampleKit={() => setIsSampleKitModalOpen(true)}

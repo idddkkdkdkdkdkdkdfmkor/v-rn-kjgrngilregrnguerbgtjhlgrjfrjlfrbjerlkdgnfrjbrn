@@ -131,6 +131,12 @@ export default function App() {
       <div className="footer">
         🔒 Safe & opens directly to Google Maps
       </div>
+
+      {/* QR CODE FOR DESKTOP VIEWERS */}
+      <div style={{ marginTop: '30px', textAlign: 'center' }}>
+        <p style={{ fontSize: '12px', color: '#888', marginBottom: '8px' }}>Scan to share this tool</p>
+        <img src="/review-qr.png" alt="Scan QR to open Review Tool" style={{ width: '120px', height: '120px', borderRadius: '12px', margin: '0 auto', border: '2px solid #e5e7eb', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }} />
+      </div>
     </div>
   );
 }
