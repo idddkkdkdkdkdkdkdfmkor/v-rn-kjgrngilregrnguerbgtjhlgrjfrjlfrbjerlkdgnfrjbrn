@@ -161,7 +161,7 @@ export default function App() {
           <Route path="/review-gen" element={
             <Suspense fallback={<Loader />}>
               <Helmet><title>Leave a Review | ID Craft India</title></Helmet>
-              <div className="pt-[72px]">
+              <div className="pt-[72px] review-gen-wrapper">
                  <ReviewGenerator />
               </div>
             </Suspense>

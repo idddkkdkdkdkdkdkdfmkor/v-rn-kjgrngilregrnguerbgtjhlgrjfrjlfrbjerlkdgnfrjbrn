@@ -1,3 +1,4 @@
+import './index.css';
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import {
   CATEGORIES,
