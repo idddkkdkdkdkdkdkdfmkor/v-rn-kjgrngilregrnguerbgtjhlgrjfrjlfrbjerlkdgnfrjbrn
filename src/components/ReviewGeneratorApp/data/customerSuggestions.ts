@@ -385,10 +385,10 @@ export const CLIENT_REVIEWS: ClientReviewItem[] = [
   },
 ];
 
-export const GOOGLE_PLACE_ID = '';
+export const GOOGLE_PLACE_ID = 'ChIJOTJwmGE8gyIRJMKALz4y9qY';
 // Direct link that immediately opens the "Write a review" box with 5 stars:
 export const GOOGLE_DIRECT_WRITE_REVIEW_URL =
-  'https://maps.app.goo.gl/Swyyj8i3fuG7sDbx7';
+  'https://search.google.com/local/writereview?placeid=ChIJOTJwmGE8gyIRJMKALz4y9qY';
 export const GOOGLE_MAPS_LISTING_URL = 'https://maps.app.goo.gl/Swyyj8i3fuG7sDbx7';
 export const GOOGLE_REVIEW_URL = GOOGLE_DIRECT_WRITE_REVIEW_URL;
 export const OFFICIAL_WEBSITE_URL = 'https://idcraft.dpdns.org/';

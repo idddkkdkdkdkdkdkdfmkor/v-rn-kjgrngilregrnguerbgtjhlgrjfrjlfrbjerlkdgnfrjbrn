@@ -34,34 +34,16 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
   };
 
   return (
-    <div className="w-full max-w-[400px] mx-auto bg-[#fdfaf5] min-h-[600px] rounded-[40px] shadow-2xl overflow-hidden relative flex flex-col p-6 sm:p-8 font-sans border-8 border-stone-950">
+    <div className="w-full max-w-[400px] mx-auto bg-[#fdfaf5] min-h-[700px] rounded-[50px] shadow-[0_20px_60px_rgba(0,0,0,0.3)] overflow-hidden relative flex flex-col p-6 sm:p-8 font-sans border-[14px] border-black ring-4 ring-stone-800 outline outline-2 outline-stone-400">
       
-      {/* Header Profile */}
-      <div className="flex items-center gap-4 mt-6">
-        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-linear-to-b from-stone-900 to-black rounded-[20px] shadow-xl flex items-center justify-center p-2 relative shrink-0">
-           {/* Gold Shield */}
-           <svg viewBox="0 0 100 120" className="w-full h-full fill-amber-300 drop-shadow-md">
-             <path d="M50 0 L100 15 L100 70 C100 95 50 120 50 120 C50 120 0 95 0 70 L0 15 Z" className="fill-stone-950 stroke-amber-300 stroke-[4px]" />
-           </svg>
-           <span className="absolute font-bold text-amber-300 text-2xl sm:text-3xl tracking-tighter" style={{ fontFamily: 'Georgia, serif' }}>ID</span>
-           {/* Lanyard punch hole simulation */}
-           <div className="absolute top-2 w-4 h-1 bg-black/50 rounded-full"></div>
-        </div>
-        <div>
-          <h1 className="text-2xl sm:text-3xl font-black text-stone-900 leading-tight tracking-tight">IDCraft<br/>Technologies</h1>
-          <p className="text-[10px] sm:text-xs text-stone-600 font-medium mt-1">Custom PVC Cards, Lanyards & Trophies</p>
-          <div className="flex items-center gap-1.5 mt-1.5 text-[10px] sm:text-xs font-bold text-stone-800">
-            <span>4.9</span>
-            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-            <span className="text-stone-300 mx-1">|</span>
-            <CheckCircle2 className="w-3.5 h-3.5 text-blue-500 fill-blue-50" />
-            <span className="text-blue-600">Verified on Google</span>
-          </div>
-        </div>
+      {/* Phone Notch / Speaker simulation */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl flex items-center justify-center gap-2">
+        <div className="w-12 h-1.5 bg-stone-800 rounded-full"></div>
+        <div className="w-2 h-2 bg-blue-900 rounded-full opacity-50"></div>
       </div>
 
       {/* Main Call to Action */}
-      <div className="mt-10 text-center">
+      <div className="mt-14 text-center">
         <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight leading-tight">
           Leave us a <br />
           <span className="text-blue-500">G</span><span className="text-red-500">o</span><span className="text-yellow-400">o</span><span className="text-blue-500">g</span><span className="text-green-500">l</span><span className="text-red-500">e</span> Review
@@ -87,23 +69,6 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
 
       {/* Review Text Box */}
       <div className="mt-8 bg-white/70 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-stone-200 shadow-sm relative group">
-        {onShuffle && (
-          <button 
-            onClick={onShuffle}
-            disabled={isShuffling}
-            className="absolute -top-3 -right-3 bg-white border border-stone-200 shadow-sm rounded-full p-2 text-stone-500 hover:text-amber-600 hover:border-amber-400 transition-all cursor-pointer disabled:opacity-50"
-            title="Shuffle for a new suggestion"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={isShuffling ? "animate-spin" : ""}>
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-              <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
-              <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
-              <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-              <line x1="12" y1="22.08" x2="12" y2="12"></line>
-            </svg>
-          </button>
-        )}
         <p className="text-stone-700 text-sm sm:text-base leading-relaxed pr-2">
           {reviewText}
           <span className="inline-block w-[2px] h-4 bg-amber-400 animate-pulse ml-1 align-middle"></span>
@@ -113,19 +78,40 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
         </div>
       </div>
 
-      {/* Huge Gold Action Button */}
+      {/* Huge Gold Action Button + Shuffle */}
       <div className="mt-8 relative z-10 flex flex-col items-center">
-        <motion.button
-          whileTap={{ scale: 0.96 }}
-          onClick={handleCopyAndOpen}
-          className="w-full bg-linear-to-r from-amber-400 via-yellow-400 to-amber-500 rounded-full py-4 px-6 flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transition-shadow border border-amber-300 cursor-pointer"
-        >
-          <div className="w-7 h-7 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
-             <span className="font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-red-500 to-yellow-500 text-sm">G</span>
-          </div>
-          <span className="font-black text-stone-900 text-lg">Copy & Open Google</span>
-          <ChevronRight className="w-6 h-6 text-stone-900" />
-        </motion.button>
+        <div className="flex w-full gap-3">
+          <motion.button
+            whileTap={{ scale: 0.96 }}
+            onClick={handleCopyAndOpen}
+            className="flex-1 bg-linear-to-r from-amber-400 via-yellow-400 to-amber-500 rounded-full py-4 px-4 flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl transition-shadow border border-amber-300 cursor-pointer"
+          >
+            <div className="w-7 h-7 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
+               <span className="font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-red-500 to-yellow-500 text-sm">G</span>
+            </div>
+            <span className="font-black text-stone-900 text-base sm:text-lg">Copy & Open Google</span>
+            <ChevronRight className="w-5 h-5 text-stone-900" />
+          </motion.button>
+          
+          {onShuffle && (
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              onClick={onShuffle}
+              disabled={isShuffling}
+              className="w-[60px] h-[60px] shrink-0 bg-white border-2 border-stone-200 shadow-lg rounded-full flex items-center justify-center text-stone-500 hover:text-amber-600 hover:border-amber-400 transition-all cursor-pointer disabled:opacity-50"
+              title="Shuffle for a new suggestion"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={isShuffling ? "animate-spin" : ""}>
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </motion.button>
+          )}
+        </div>
         
         <p className="flex items-center gap-1.5 text-xs text-stone-500 mt-4 font-medium">
           Safe & opens directly to Google Maps
