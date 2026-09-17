@@ -65,7 +65,7 @@ export const IndustriesPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold text-[#0F172A] tracking-tight mb-6">
           Purpose-Built for <br className="hidden md:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
             Every Industry
           </span>
         </h1>
@@ -90,7 +90,7 @@ export const IndustriesPage: React.FC = () => {
                     className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className={`absolute bottom-6 ${isEven ? 'left-6' : 'right-6'} z-20`}>
-                    <div className={`w-14 h-14 rounded-2xl bg-white shadow-xl flex items-center justify-center text-${industry.color}-600`}>
+                    <div className={`w-14 h-14 rounded-2xl bg-white shadow-xl flex items-center justify-center text-brand-primary`}>
                       <industry.icon className="w-7 h-7" />
                     </div>
                   </div>
@@ -109,17 +109,21 @@ export const IndustriesPage: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                   {industry.features.map((feature, i) => (
                     <div key={i} className="flex items-center gap-3">
-                      <CheckCircle2 className={`w-5 h-5 text-${industry.color}-500 shrink-0`} />
+                      <CheckCircle2 className={`w-5 h-5 text-brand-primary shrink-0`} />
                       <span className="text-[#334155] font-medium">{feature}</span>
                     </div>
                   ))}
                 </div>
 
                 <button 
-                  onClick={() => navigate('/quote')}
-                  className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-${industry.color}-600 hover:bg-${industry.color}-700 transition-colors shadow-lg shadow-${industry.color}-600/20`}
+                  onClick={() => {
+                    if (industry.id === 'education') navigate('/solutions/schools');
+                    else if (industry.id === 'corporate') navigate('/solutions/corporate');
+                    else navigate('/quote'); // fallback for others for now
+                  }}
+                  className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-brand-primary hover:bg-brand-dark transition-colors shadow-lg shadow-brand-primary/20`}
                 >
-                  Request a Proposal <ArrowRight className="w-4 h-4" />
+                  Explore {industry.title} <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
@@ -130,7 +134,7 @@ export const IndustriesPage: React.FC = () => {
       {/* CTA Section */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-32">
         <div className="bg-[#0F172A] rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-mint0/20 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
           <div className="relative z-10">
             <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">Don't see your industry?</h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-10">
