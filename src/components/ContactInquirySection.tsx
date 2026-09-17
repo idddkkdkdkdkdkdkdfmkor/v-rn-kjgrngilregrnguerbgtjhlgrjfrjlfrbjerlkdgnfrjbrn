@@ -49,7 +49,6 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
 
     const text = encodeURIComponent(
       `Hello IDCraft India! Here is an institutional quotation inquiry:\n` +
@@ -65,6 +64,7 @@ export const ContactInquirySection: React.FC<ContactInquirySectionProps> = ({
     );
 
     window.open(`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=${text}`, '_blank');
+    window.location.href = '/thank-you';
   };
 
   return (
