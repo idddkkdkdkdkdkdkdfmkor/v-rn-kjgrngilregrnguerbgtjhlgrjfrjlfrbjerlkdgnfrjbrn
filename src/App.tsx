@@ -31,6 +31,7 @@ const SchoolSolutionsPage = React.lazy(() => import('./components/solutions/Scho
 const CorporateSolutionsPage = React.lazy(() => import('./components/solutions/CorporateSolutionsPage').then(m => ({ default: m.CorporateSolutionsPage })));
 const IndustriesPage = React.lazy(() => import('./components/IndustriesPage').then(m => ({ default: m.IndustriesPage })));
 const TrustCenterPage = React.lazy(() => import('./components/TrustCenterPage').then(m => ({ default: m.TrustCenterPage })));
+const ThankYouPage = React.lazy(() => import('./pages/ThankYouPage'));
 const CaseStudiesPage = React.lazy(() => import('./components/CaseStudiesPage').then(m => ({ default: m.CaseStudiesPage })));
 const LoginPage = React.lazy(() => import('./components/portal/AuthPages').then(m => ({ default: m.LoginPage })));
 const RegisterPage = React.lazy(() => import('./components/portal/AuthPages').then(m => ({ default: m.RegisterPage })));
@@ -222,6 +223,7 @@ export default function App() {
           <Route path="/refund-policy" element={<><Helmet><title>Refund & Cancellation Policy | ID Craft India</title></Helmet><RefundPolicy /></>} />
           <Route path="/cookie-policy" element={<><Helmet><title>Cookie Policy | ID Craft India</title></Helmet><CookiePolicy /></>} />
           <Route path="/contact" element={<><Helmet><title>Contact Us | ID Craft India</title></Helmet><ContactUsPage /></>} />
+          <Route path="/thank-you" element={<Suspense fallback={<Loader />}><ThankYouPage /></Suspense>} />
 
           {/* Client Portal & Authentication */}
           <Route path="/portal/login" element={<Suspense fallback={<Loader />}><LoginPage /></Suspense>} />
