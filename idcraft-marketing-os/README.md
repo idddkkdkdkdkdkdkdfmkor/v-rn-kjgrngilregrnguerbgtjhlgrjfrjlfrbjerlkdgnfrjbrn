@@ -17,15 +17,28 @@ This is the production-grade implementation of the IDCraft Growth OS. It is stri
 
 This is the fastest, most reliable way to execute the workflow outlined in your document. It connects directly to your Google Sheet, applies strict keyword rules, generates content and images via Free AI, and publishes to Google My Business.
 
-### 1. Setup
-Create a `.env` file in this directory (Only needed for Google Business Profile publishing):
+### 1. Setup & Google Authorization
+You need to generate Google OAuth credentials to publish posts on your behalf.
+1. Make sure you have created your Google Cloud Project, enabled APIs, and downloaded your **Client ID** and **Client Secret**.
+2. Create a `.env` file in this directory and add them:
 ```env
-# ONLY NEEDED FOR ACTUAL PUBLISHING TO MAPS
-GOOGLE_LOCATION_ID="your-gmb-location-id"
-GOOGLE_ACCESS_TOKEN="your-gmb-oauth-token"
+GOOGLE_CLIENT_ID="your-client-id-here"
+GOOGLE_CLIENT_SECRET="your-client-secret-here"
+```
+3. Run the authorization script:
+```bash
+node get_google_location.js
+```
+4. Open `http://localhost:3000` in your browser, log in with your IDCraft email, and grant permission.
+5. The screen (and terminal) will spit out your `GOOGLE_ACCESS_TOKEN` and your exact `GOOGLE_LOCATION_ID`. Add these to your `.env` file!
+
+```env
+# Add these after running get_google_location.js
+GOOGLE_LOCATION_ID="1234567890"
+GOOGLE_ACCESS_TOKEN="ya29.a0..."
 ```
 
-*Note: You do NOT need OpenAI or Google Service Account keys anymore!*
+*Note: You do NOT need OpenAI or Google Service Account keys!*
 
 ### 2. Run the Engine
 ```bash
