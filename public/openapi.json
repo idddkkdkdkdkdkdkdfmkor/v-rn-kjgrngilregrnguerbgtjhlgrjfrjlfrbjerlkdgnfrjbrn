@@ -1,0 +1,85 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "IDCraft India API",
+    "description": "API for IDCraft India quoting, CRM, and order tracking.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://idcraft.dpdns.org"
+    }
+  ],
+  "paths": {
+    "/api/quote": {
+      "get": {
+        "operationId": "getQuote",
+        "summary": "Calculate pricing for bulk ID cards",
+        "parameters": [
+          {
+            "name": "quantity",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "cardType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["PVC", "RFID", "Smart"]
+            }
+          },
+          {
+            "name": "lanyards",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful calculation"
+          }
+        }
+      }
+    },
+    "/api/lead": {
+      "post": {
+        "operationId": "submitLead",
+        "summary": "Submit a lead to the IDCraft CRM",
+        "responses": {
+          "200": {
+            "description": "Lead submitted"
+          }
+        }
+      }
+    },
+    "/api/order": {
+      "get": {
+        "operationId": "getOrderStatus",
+        "summary": "Check the status of a production order",
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Order status retrieved"
+          }
+        }
+      }
+    }
+  }
+}
