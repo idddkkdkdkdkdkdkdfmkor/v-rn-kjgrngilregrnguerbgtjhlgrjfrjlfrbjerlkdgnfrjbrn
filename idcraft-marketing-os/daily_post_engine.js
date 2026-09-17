@@ -115,6 +115,29 @@ function getFreeImageURL(imagePrompt) {
 async function postToGoogleBusinessProfile(content, imageUrl) {
   console.log('🌍 Publishing to Google Business Profile...');
   
+  // SUBSTITUTE ROUTE: Make.com Webhook Bypass
+  if (process.env.MAKE_WEBHOOK_URL) {
+    console.log('⚡ MAKE.COM BYPASS DETECTED! Sending post data to Make.com for instant publishing...');
+    try {
+      const response = await fetch(process.env.MAKE_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          text: content,
+          imageUrl: imageUrl,
+          locationId: LOCATION_ID
+        })
+      });
+      if (response.ok) {
+        console.log('✅ Successfully sent to Make.com! Make will now publish it to Google.');
+        return;
+      }
+    } catch (err) {
+      console.error('❌ Make.com bypass failed:', err.message);
+    }
+  }
+
+  // STANDARD ROUTE: Direct Google API (Requires Approval)
   if (!process.env.GOOGLE_ACCESS_TOKEN || !LOCATION_ID) {
     console.log('⚠️ Missing Google OAuth Token or Location ID in .env. Skipping actual publish.');
     return;
@@ -150,7 +173,6 @@ async function postToGoogleBusinessProfile(content, imageUrl) {
     const accountName = accounts[0].name; // e.g., "accounts/1029384"
     
     // Construct proper posting URL
-    // Some users store LOCATION_ID as "12345" and some as "locations/12345"
     const cleanLocationId = LOCATION_ID.includes('/') ? LOCATION_ID.split('/')[1] : LOCATION_ID;
     const postUrl = `https://mybusiness.googleapis.com/v4/${accountName}/locations/${cleanLocationId}/localPosts`;
 
@@ -169,7 +191,7 @@ async function postToGoogleBusinessProfile(content, imageUrl) {
     }
 
     const data = await response.json();
-    console.log('✅ Successfully published to Google Maps!', data.searchUrl || '');
+    console.log('✅ Successfully published to Google Maps directly!', data.searchUrl || '');
   } catch (err) {
     console.error('❌ Publishing failed:', err.message);
   }
