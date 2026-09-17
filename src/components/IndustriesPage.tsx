@@ -11,46 +11,46 @@ export const IndustriesPage: React.FC = () => {
       id: 'education',
       title: 'K-12 & Higher Education',
       icon: Building2,
-      color: 'blue',
+      color: 'brand-primary',
       description: 'Comprehensive identity programs for students, staff, and faculty with integrated access control and library management.',
       features: ['Multi-branch Data Sync', 'Library Barcodes', 'Bus Transport RFID', 'Parent Escort Cards'],
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800'
+      image: '/industry_education.jpg'
     },
     {
       id: 'healthcare',
       title: 'Hospitals & Healthcare',
       icon: Stethoscope,
-      color: 'emerald',
+      color: 'brand-primary',
       description: 'Medical-grade identity solutions with strict access control for restricted areas, ICUs, and staff time-tracking.',
       features: ['Role-based Color Coding', 'NFC Ward Access', 'Antibacterial Coatings', 'Emergency Protocols'],
-      image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800'
+      image: '/industry_healthcare.jpg'
     },
     {
       id: 'corporate',
       title: 'Corporate & Tech Parks',
       icon: Users,
-      color: 'purple',
+      color: 'brand-primary',
       description: 'Enterprise-grade employee badges combining visual identity, logical access, and physical security.',
       features: ['HID/Mifare Integration', 'Visitor Management', 'Cafeteria Payments', 'Parking Access'],
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800'
+      image: '/industry_corporate.jpg'
     },
     {
       id: 'manufacturing',
       title: 'Factories & Manufacturing',
       icon: Factory,
-      color: 'amber',
+      color: 'brand-primary',
       description: 'Ruggedized ID cards built to withstand harsh industrial environments, chemicals, and extreme temperatures.',
       features: ['Polycarbonate Core', 'Shift Attendance', 'Heavy Machinery Auth', 'Safety Certifications'],
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800'
+      image: '/industry_manufacturing.jpg'
     },
     {
       id: 'government',
       title: 'Government & Defense',
       icon: Landmark,
-      color: 'slate',
+      color: 'brand-primary',
       description: 'High-security credentials with micro-text, holograms, and biometric integration for classified environments.',
       features: ['UV Ghost Images', 'Guilloche Patterns', 'FIPS Compliant', 'Anti-Counterfeit'],
-      image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=800'
+      image: '/industry_government.jpg'
     }
   ];
 
