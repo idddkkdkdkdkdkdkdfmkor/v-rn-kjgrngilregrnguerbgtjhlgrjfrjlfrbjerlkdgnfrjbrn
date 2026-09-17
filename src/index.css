@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #0F8A43;
+  --color-brand-dark: #046536;
+  --color-brand-mint: #E8F7EF;
+  --color-brand-bg: #F7FAF8;
+  --color-brand-gray: #667085;
+  --color-brand-black: #111827;
+  --color-brand-success: #16A34A;
+  --color-brand-warning: #F59E0B;
+}
+
 @layer base {
   html {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
