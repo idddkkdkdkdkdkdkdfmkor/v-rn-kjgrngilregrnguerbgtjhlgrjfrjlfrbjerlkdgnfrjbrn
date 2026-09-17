@@ -33,7 +33,15 @@ async function getUnrepliedReviews() {
   }
 
   try {
-    const response = await fetch(`https://mybusiness.googleapis.com/v4/accounts/YOUR_ACCOUNT_ID/locations/${LOCATION_ID}/reviews`, {
+    const accountRes = await fetch('https://mybusinessaccountmanagement.googleapis.com/v1/accounts', {
+      headers: { 'Authorization': `Bearer ${process.env.GOOGLE_ACCESS_TOKEN}` }
+    });
+    if (!accountRes.ok) throw new Error("Could not fetch accounts.");
+    const accountData = await accountRes.json();
+    const accountName = accountData.accounts[0].name;
+
+    const cleanLocationId = LOCATION_ID.includes('/') ? LOCATION_ID.split('/')[1] : LOCATION_ID;
+    const response = await fetch(`https://mybusiness.googleapis.com/v4/${accountName}/locations/${cleanLocationId}/reviews`, {
       headers: { 'Authorization': `Bearer ${process.env.GOOGLE_ACCESS_TOKEN}` }
     });
 
@@ -85,7 +93,15 @@ async function postReplyToGoogle(reviewId, replyText) {
   }
 
   try {
-    const response = await fetch(`https://mybusiness.googleapis.com/v4/accounts/YOUR_ACCOUNT_ID/locations/${LOCATION_ID}/reviews/${reviewId}/reply`, {
+    const accountRes = await fetch('https://mybusinessaccountmanagement.googleapis.com/v1/accounts', {
+      headers: { 'Authorization': `Bearer ${process.env.GOOGLE_ACCESS_TOKEN}` }
+    });
+    if (!accountRes.ok) throw new Error("Could not fetch accounts.");
+    const accountData = await accountRes.json();
+    const accountName = accountData.accounts[0].name;
+
+    const cleanLocationId = LOCATION_ID.includes('/') ? LOCATION_ID.split('/')[1] : LOCATION_ID;
+    const response = await fetch(`https://mybusiness.googleapis.com/v4/${accountName}/locations/${cleanLocationId}/reviews/${reviewId}/reply`, {
       method: 'PUT',
       headers: {
         'Authorization': `Bearer ${process.env.GOOGLE_ACCESS_TOKEN}`,

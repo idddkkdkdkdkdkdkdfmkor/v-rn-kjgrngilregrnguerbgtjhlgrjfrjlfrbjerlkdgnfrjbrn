@@ -39,7 +39,23 @@ async function getTodayTopic() {
       return null;
     }
 
-    const todayRow = rows[1]; // Using the first content row for demonstration
+    // Attempt to find a row matching today's date (YYYY-MM-DD)
+    // IDCraft's date column is at index 1
+    const todayStr = new Date().toISOString().split('T')[0];
+    let todayRow = rows.find(r => r[1] === todayStr);
+
+    if (!todayRow) {
+      console.log(`⚠️ No specific topic found for ${todayStr}. Rotating to a standard topic...`);
+      // Deterministic rotation based on the current day of the year to ensure a unique post every day
+      // Math handles looping back to the start if we exceed the sheet length
+      const start = new Date(new Date().getFullYear(), 0, 0);
+      const diff = new Date() - start;
+      const oneDay = 1000 * 60 * 60 * 24;
+      const dayOfYear = Math.floor(diff / oneDay);
+      
+      const rowIndex = (dayOfYear % (rows.length - 1)) + 1; // +1 to skip header
+      todayRow = rows[rowIndex];
+    }
 
     return {
       date: todayRow[1],
@@ -119,7 +135,26 @@ async function postToGoogleBusinessProfile(content, imageUrl) {
   };
 
   try {
-    const response = await fetch(`https://mybusiness.googleapis.com/v4/accounts/YOUR_ACCOUNT_ID/locations/${LOCATION_ID}/localPosts`, {
+    // Dynamically fetch Account ID
+    const accountRes = await fetch('https://mybusinessaccountmanagement.googleapis.com/v1/accounts', {
+      headers: { 'Authorization': `Bearer ${process.env.GOOGLE_ACCESS_TOKEN}` }
+    });
+    
+    if (!accountRes.ok) throw new Error("Could not fetch accounts. Ensure GBP API is enabled.");
+    
+    const accountData = await accountRes.json();
+    const accounts = accountData.accounts || [];
+    
+    if (accounts.length === 0) throw new Error("No Google Business accounts found.");
+    
+    const accountName = accounts[0].name; // e.g., "accounts/1029384"
+    
+    // Construct proper posting URL
+    // Some users store LOCATION_ID as "12345" and some as "locations/12345"
+    const cleanLocationId = LOCATION_ID.includes('/') ? LOCATION_ID.split('/')[1] : LOCATION_ID;
+    const postUrl = `https://mybusiness.googleapis.com/v4/${accountName}/locations/${cleanLocationId}/localPosts`;
+
+    const response = await fetch(postUrl, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${process.env.GOOGLE_ACCESS_TOKEN}`,
