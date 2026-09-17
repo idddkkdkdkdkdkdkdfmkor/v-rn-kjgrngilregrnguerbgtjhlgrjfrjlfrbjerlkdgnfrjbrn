@@ -77,7 +77,7 @@ export const GoogleReviewPreviewCard: React.FC<GoogleReviewPreviewCardProps> = (
             className="focus:outline-none cursor-pointer"
           >
             <Star 
-              className={\w-10 h-10 sm:w-12 sm:h-12 transition-all duration-300 \\} 
+              className={`w-10 h-10 sm:w-12 sm:h-12 transition-all duration-300 ${star <= rating ? 'fill-amber-400 text-amber-500 drop-shadow-md scale-110' : 'fill-stone-200 text-stone-300'}`} 
             />
           </motion.button>
         ))}
