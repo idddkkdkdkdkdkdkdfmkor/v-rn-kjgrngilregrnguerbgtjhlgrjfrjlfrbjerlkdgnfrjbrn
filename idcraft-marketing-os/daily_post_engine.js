@@ -123,6 +123,7 @@ async function postToGoogleBusinessProfile(content, imageUrl) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          type: 'post',
           text: content,
           imageUrl: imageUrl,
           locationId: LOCATION_ID

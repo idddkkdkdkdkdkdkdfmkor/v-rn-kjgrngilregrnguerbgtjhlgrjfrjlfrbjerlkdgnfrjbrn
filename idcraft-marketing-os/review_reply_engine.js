@@ -84,11 +84,35 @@ Star Rating: ${review.starRating}/5
 }
 
 // 3. Post Reply to Google Business Profile
-async function postReplyToGoogle(reviewId, replyText) {
-  console.log('🌍 Publishing reply to Google Maps...');
-  
-  if (!process.env.GOOGLE_ACCESS_TOKEN || !LOCATION_ID) {
-    console.log('⚠️ Google API pending approval. Skipping actual publish.');
+async function postReplyToGoogle(reviewName, replyText) {
+  console.log(`📤 Posting reply to ${reviewName}...`);
+
+  // SUBSTITUTE ROUTE: Make.com Webhook Bypass
+  if (process.env.MAKE_WEBHOOK_URL) {
+    console.log('⚡ MAKE.COM BYPASS DETECTED! Sending review reply data to Make.com...');
+    try {
+      const response = await fetch(process.env.MAKE_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'review',
+          reviewId: reviewName,
+          replyText: replyText,
+          locationId: LOCATION_ID
+        })
+      });
+      if (response.ok) {
+        console.log('✅ Successfully sent reply to Make.com! Make will publish it.');
+        return;
+      }
+    } catch (err) {
+      console.error('❌ Make.com bypass failed:', err.message);
+    }
+  }
+
+  // STANDARD ROUTE: Direct Google API
+  if (!process.env.GOOGLE_ACCESS_TOKEN) {
+    console.log('⚠️ Missing Google OAuth Token in .env. Skipping actual publish.');
     return;
   }
 
