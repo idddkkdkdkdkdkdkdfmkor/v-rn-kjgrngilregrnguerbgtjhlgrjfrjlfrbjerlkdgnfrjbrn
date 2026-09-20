@@ -120,7 +120,7 @@ export default function App() {
   );
 
   const isDashboard = location.pathname.startsWith('/portal/dashboard') || location.pathname.startsWith('/portal/superadmin');
-  const isReviewGen = location.pathname.startsWith('/review-gen');
+  const isReviewGen = location.pathname.startsWith('/review-gen') || location.pathname.startsWith('/review') || location.pathname.startsWith('/reviews') || location.pathname.startsWith('/write-review');
   const isMarketingGuide = location.pathname.startsWith('/marketing-guide');
   const hideLayout = isDashboard || isReviewGen || isMarketingGuide;
 
@@ -162,14 +162,21 @@ export default function App() {
             </div>
           } />
 
-          <Route path="/review-gen" element={
-            <Suspense fallback={<Loader />}>
-              <Helmet><title>Leave a Review | ID Craft India</title></Helmet>
-              <div className="pt-[72px] review-gen-wrapper">
-                 <ReviewGenerator />
-              </div>
-            </Suspense>
-          } />
+          {/* Review Generator Routes */}
+          {['/review-gen', '/review', '/reviews', '/write-review'].map((path) => (
+            <Route
+              key={path}
+              path={path}
+              element={
+                <Suspense fallback={<Loader />}>
+                  <Helmet><title>Leave a Google Review | IDCraft Technologies</title></Helmet>
+                  <div className="review-gen-wrapper">
+                    <ReviewGenerator />
+                  </div>
+                </Suspense>
+              }
+            />
+          ))}
 
           <Route path="/marketing-guide" element={
             <Suspense fallback={<Loader />}>
