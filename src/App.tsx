@@ -1,6 +1,7 @@
 import React, { useState, Suspense } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import SEO_META from './data/seoKeywords';
 
 // Keep regular imports for homepage components
 import { Navbar } from './components/Navbar';
@@ -124,11 +125,41 @@ export default function App() {
   const isMarketingGuide = location.pathname.startsWith('/marketing-guide');
   const hideLayout = isDashboard || isReviewGen || isMarketingGuide;
 
+  // Derive SEO key from current path
+  const seoKey = (() => {
+    const p = location.pathname.replace(/^\//, '') || 'home';
+    if (p.startsWith('solutions/schools')) return 'solutions/schools';
+    if (p.startsWith('solutions/corporate')) return 'solutions/corporate';
+    if (p.startsWith('industries')) return 'industries';
+    if (p.startsWith('case-studies')) return 'case-studies';
+    if (p.startsWith('trust-center')) return 'trust-center';
+    if (p.startsWith('review')) return 'review';
+    if (p.startsWith('quote')) return 'quote';
+    if (p.startsWith('samples')) return 'samples';
+    if (p.startsWith('studio')) return 'studio';
+    if (p.startsWith('contact')) return 'contact';
+    return 'home';
+  })();
+  const pageSEO = SEO_META[seoKey] ?? SEO_META['home'];
+  const canonicalPath = location.pathname || '/';
+
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans antialiased selection:bg-brand-primary selection:text-white flex flex-col">
       <Helmet>
-        <title>ID Craft India | Premium PVC ID Cards</title>
-        <meta name="description" content="Premium PVC ID Cards for Schools, Colleges & Companies Across India." />
+        <title>{pageSEO.title}</title>
+        <meta name="description" content={pageSEO.description} />
+        <meta name="keywords" content={pageSEO.keywords.join(', ')} />
+        <meta property="og:title" content={pageSEO.title} />
+        <meta property="og:description" content={pageSEO.description} />
+        <meta property="og:url" content={`https://idcraft.dpdns.org${canonicalPath}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://idcraft.dpdns.org/ad-image.jpg" />
+        <meta property="og:site_name" content="IDCraft India" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageSEO.title} />
+        <meta name="twitter:description" content={pageSEO.description} />
+        <meta name="twitter:image" content="https://idcraft.dpdns.org/ad-image.jpg" />
+        <link rel="canonical" href={`https://idcraft.dpdns.org${canonicalPath}`} />
       </Helmet>
 
       {!hideLayout && (
@@ -186,10 +217,6 @@ export default function App() {
 
           <Route path="/samples" element={
             <Suspense fallback={<Loader />}>
-              <Helmet>
-                <title>Sample Proofs | ID Craft India</title>
-                <meta name="description" content="View high-resolution DSLR sample proofs of our premium printed PVC ID cards." />
-              </Helmet>
               <RealPVCSamplesPage
                 onBackToHome={() => handleNavigatePage('home')}
                 onOpenWhatsApp={handleOpenWhatsApp}
@@ -201,10 +228,6 @@ export default function App() {
           
           <Route path="/studio" element={
             <Suspense fallback={<Loader />}>
-              <Helmet>
-                <title>Card Studio | ID Craft India</title>
-                <meta name="description" content="Design and customize your premium PVC ID cards in our Card Studio." />
-              </Helmet>
               <StudioPage
                 onBackToHome={() => handleNavigatePage('home')}
                 onOpenWhatsApp={handleOpenWhatsApp}
@@ -214,10 +237,6 @@ export default function App() {
 
           <Route path="/quote" element={
             <Suspense fallback={<Loader />}>
-              <Helmet>
-                <title>Bulk Quote Calculator | ID Craft India</title>
-                <meta name="description" content="Get an instant bulk quote for premium PVC ID card printing." />
-              </Helmet>
               <QuotePage
                 onBackToHome={() => handleNavigatePage('home')}
                 onOpenWhatsApp={handleOpenWhatsApp}
@@ -232,10 +251,6 @@ export default function App() {
 
           <Route path="/data-collection" element={
             <Suspense fallback={<Loader />}>
-              <Helmet>
-                <title>Data Collection | ID Craft India</title>
-                <meta name="description" content="Submit your ID card data securely for bulk printing." />
-              </Helmet>
               <DataCollectionPage
                 onBackToHome={() => handleNavigatePage('home')}
                 onOpenWhatsApp={handleOpenWhatsApp}

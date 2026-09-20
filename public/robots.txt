@@ -1,4 +1,28 @@
 User-agent: *
 Allow: /
+Disallow: /portal/
+Disallow: /portal/superadmin
+Disallow: /api/
+Disallow: /*.json$
+Allow: /manifest.json
 
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Disallow: /portal/
+Crawl-delay: 1
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Disallow: /portal/
+Crawl-delay: 2
+
+# Sitemap location
 Sitemap: https://idcraft.dpdns.org/sitemap.xml
+
+# Host
+Host: https://idcraft.dpdns.org
